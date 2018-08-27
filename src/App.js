@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Provider } from 'react-redux'
 import store from './store'
+import UserListContainer from './components/UserListContainer'
 
 class App extends Component {
   render() {
@@ -11,12 +12,9 @@ class App extends Component {
         <header className="App-header"> <br/><br/>
           <h1 className="App-title">Welcome to Dinetinder</h1>
         </header>
-        <button id="dine-out">
-          Dine out
-        </button>
-        <button id="dine-in">
-          Dine in
-        </button>
+        <p>
+          <UserListContainer />
+        </p>
       </div>
       </Provider>
     );
