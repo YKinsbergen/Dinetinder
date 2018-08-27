@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Provider } from 'react-redux'
+import { Route, Link } from 'react-router-dom'
 import store from './store'
-import UserListContainer from './components/UserListContainer'
+import DineOutContainer from './components/DineOutContainer'
+import Homepage from './components/Homepage'
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <div className="App">
-        <header className="App-header"> <br/><br/>
-          <h1 className="App-title">Welcome to Dinetinder</h1>
-        </header>
+      <div>
         <p>
-          <UserListContainer />
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/DineOutSwipePage' 
+          component={DineOutContainer} />
         </p>
       </div>
       </Provider>
