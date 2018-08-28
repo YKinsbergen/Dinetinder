@@ -2,9 +2,6 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import DineOutList from './DineOutList'
-// import ReactSwipeNavigation from 'react-swipe-navigation';
-// import 'action' from '../actions/?'
-
 
 class DineOutContainer extends React.Component {
     render() {
