@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Provider } from 'react-redux'
 import { Route, Link } from 'react-router-dom'
-import store from './store'
 import DineOutContainer from './components/DineOutContainer'
 import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
 import dog from './images/dog.png'
+
 
 class App extends Component {
   state={
@@ -16,13 +15,12 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 1500)
+    , 100)
   }
 
   render() {
     const {loading} = this.state
     return (
-      <Provider store={store}>
       <div>
       <LoadingScreen
     loading={loading}
@@ -40,7 +38,6 @@ class App extends Component {
 
   </LoadingScreen>
       </div>
-      </Provider>
     );
   }
 }

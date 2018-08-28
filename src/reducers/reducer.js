@@ -4,7 +4,8 @@ const UserList = [
   id: 1,
   name: 'Mark',
   address: 'Het torentje, Den Haag',
-  dish: 'Bolognese'
+  dish: 'Bolognese',
+  dishPhoto: ''
   },
   {
   id: 2,

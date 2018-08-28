@@ -3,9 +3,15 @@ import * as React from 'react'
 
 export default function DineOutList(props) {
     return (
-        <div align="center">
+    <div>
+        <h2>
             You're now in component: DineOutList
             This is where you'll be swiping.
-        </div> 
+        </h2>
+        <ul>
+            {props.users.map(user =>
+            <li key={user.id}>{user.dish}</li>)}
+        </ul>
+    </div> 
     )
 }
