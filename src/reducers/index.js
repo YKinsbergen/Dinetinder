@@ -1,8 +1,8 @@
 //reducers/index.js
 import { combineReducers } from 'redux'
-// import albums from './albums'
+import userReducer from '../reducers'
 
 
 export default combineReducers({
-//   albums,
+    userReducer
 })
