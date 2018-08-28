@@ -10,17 +10,19 @@ export default class Homepage extends React.Component {
     <header className="App-header"> <br/><br/>
       <h1 className="App-title">Welcome to Look or Cook</h1>
     </header>
-    <div>
+    <div id="homepage-button-div">
+            <button id="dine-in">
+            <Link to='/Cooking'>
+            Cooking
+            </Link>
+            </button> <br/><br/><br/><br/>
             <button id="dine-out">
-            <Link to='/DineOutSwipePage'>
-            Dine out 
+            <Link to='/Looking'>
+            Looking 
             </Link>
             </button>
-            </div> <br/><br/><br/><br/>
+            </div> 
             <div>
-            <button id="dine-in">
-            Dine in
-            </button>
             </div>
     </div>
         )

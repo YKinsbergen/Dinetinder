@@ -14,7 +14,8 @@
     "react-scripts": "1.1.5",
     "react-swipe-navigation": "^1.1.5",
     "react-swipeable": "^4.3.0",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "swipejs": "^2.2.11"
   },
   "scripts": {
     "start": "react-scripts start",
