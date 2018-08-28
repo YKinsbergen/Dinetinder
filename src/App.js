@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 100)
+    , 1500)
   }
 
   render() {
@@ -35,8 +35,7 @@ class App extends Component {
           <Route exact path='/DineOutSwipePage' 
           component={DineOutContainer}/>
         </div>
-
-  </LoadingScreen>
+      </LoadingScreen>
       </div>
     );
   }
