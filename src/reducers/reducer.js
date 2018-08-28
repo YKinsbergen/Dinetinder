@@ -1,5 +1,10 @@
 //reducers/reducer.js
-import dog from '../images/dog.png'
+
+import alexander from '../images/alexander.png'
+import mark from '../images/mark.png'
+import rita from '../images/rita.png'
+import job from '../images/job.png'
+import geert from '../images/geert.png'
 
 const UserList = [
   {
@@ -7,40 +12,40 @@ const UserList = [
   name: 'Mark',
   address: 'Het torentje, Den Haag',
   dish: 'Bolognese',
-  price: 25,
-  dishPhoto: dog
+  dishPhoto: mark,
+  price: 25
   },
   {
   id: 2,
   name: 'Rita',
   address: 'Larenseweg, Hilversum',
   dish: 'Carpaccio',
-  price: 23.50,
-  dishPhoto: dog
+  dishPhoto: rita,
+  price: 23.50
   },
   {
   id: 3,
   name: 'Job',
   address: 'Burgerweeshuispad, Amsterdam',
   dish: 'Hutspot',
-  price: 2,
-  dishPhoto: dog
+  dishPhoto: job,
+  price: 2
   },
   {
   id: 4,
   name: 'Alexander',
   address: 'Kikkerstraat, Rotterdam',
   dish: 'Kikkerbilletjes',
-  price: 40,
-  dishPhoto: dog
+  dishPhoto: alexander,
+  price: 40
   },
   {
   id: 5,
   name: 'Geert',
   address: 'De Bijlmer, Amsterdam',
   dish: 'Foie gras',
-  price: 26,
-  dishPhoto: dog
+  dishPhoto: geert,
+  price: 26
   }
 ]
 
@@ -50,5 +55,5 @@ const userReducer = (state = UserList, action = {}) => {
       return state
     }
   }
-  
+
   export default userReducer

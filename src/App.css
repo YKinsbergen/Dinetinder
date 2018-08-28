@@ -46,3 +46,22 @@
   font-size: 50px
 }
 
+.swipe-container {
+  width:200px;
+  height:200px;
+  background:red;
+  margin:0 auto;
+  overflow:hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-item {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe-container img { width:150px; height:150px;}
