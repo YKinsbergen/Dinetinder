@@ -34,23 +34,3 @@
 #dine-in {
   font-size: 50px
 }
-
-.carousel div {
-  background: darkorange !important;
-  position: relative;
-  padding: 20px !important;
-}
-
-#menu {
-  display: none;
-}
-
-#msgDiv {
-  padding: 10px;
-}
-
-#dog {
-  width: 90%;
-  height: 100%;
-  position: top;
-}
