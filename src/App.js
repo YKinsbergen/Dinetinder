@@ -8,6 +8,7 @@ import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
 import dog from './images/dog.png'
 
+
 class App extends Component {
   state={
     loading: true
@@ -16,7 +17,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 1500)
+    , 500)
   }
 
   render() {
