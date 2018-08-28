@@ -18,6 +18,12 @@
   font-size: 3.5em;
 }
 
+@media only screen and (max-width: 600px) {
+  .App-title {
+    font-size: 2.5em;
+    }
+}
+
 .App-intro {
   font-size: large;
 }
@@ -27,16 +33,19 @@
   to { transform: rotate(360deg); }
 }
 
+.userPhotos {
+  width: 10%;
+  height: 10%;
+}
+
 #dine-out {
-  font-size: 50px
+  font-size: 50px;
 }
 
 #dine-in {
   font-size: 50px
 }
 
-/*.swipe-container { width:200px; height:200px; background:red; margin:0 auto; overflow:hidden; }
-.swipe-item { width:200px; height:150px; background:green; }*/
 .swipe-container {
   width:200px;
   height:200px;
