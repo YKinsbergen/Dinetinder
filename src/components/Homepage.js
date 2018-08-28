@@ -1,8 +1,6 @@
-//components/UserListContainer.js
+//components/Homepage.js
 import * as React from 'react'
-import { connect } from 'react-redux'
 import {Link} from 'react-router-dom'
-
 // import 'action' from '../actions/?'
 
 export default class Homepage extends React.Component {
@@ -10,7 +8,7 @@ export default class Homepage extends React.Component {
         return (
     <div className="App">
     <header className="App-header"> <br/><br/>
-      <h1 className="App-title">Welcome to Dinetinder</h1>
+      <h1 className="App-title">Welcome to Look or Cook</h1>
     </header>
     <div>
             <button id="dine-out">
