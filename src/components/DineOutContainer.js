@@ -20,7 +20,7 @@ class DineOutContainer extends React.Component {
     console.log("click")
   }
 
-  se = () => {
+  handleJoinDinner = () => {
     console.log("joining dinner")
   }
   render() {
@@ -59,7 +59,7 @@ class DineOutContainer extends React.Component {
           </Swipe>
           
           <div style={{textAlign:"center"}}>
-              <a onClick={this.se} className="swipe-button">join dinner</a>
+              <a onClick={this.handleJoinDinner} className="swipe-button">join dinner</a>
           </div>
 
       </div>
