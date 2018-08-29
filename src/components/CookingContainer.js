@@ -1,5 +1,6 @@
 //components/CookingContainer.js
 import * as React from 'react'
+import ImageUploader from 'react-images-upload'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { connect } from 'react-redux'
@@ -7,7 +8,12 @@ import { addUser } from '../actions/user'
 
 class CookingContainer extends React.Component {
 
-    
+    onDrop = (picture) => {
+        this.setState({
+            
+        });
+    }
+
     handleChange = (event) => {
         const value = event.target.value
         const name = event.target.name;
@@ -27,7 +33,8 @@ class CookingContainer extends React.Component {
         convoTopic: this.state.convoTopic,
         price: this.state.price,
         time: this.state.time,
-        location: this.state.location
+        location: this.state.location,
+        dishPhoto: this.state.dishPhoto
     })
     event.target.name.value = ""
     event.target.dish.value = ""
@@ -85,6 +92,13 @@ class CookingContainer extends React.Component {
             <input type="submit" value="Submit" />
 
     </form>
+    <ImageUploader
+                withIcon={true}
+                buttonText='Choose images'
+                onChange={this.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={5242880}
+            />
         </div>)
     }
 }
