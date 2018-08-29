@@ -8,7 +8,7 @@ export default class Homepage extends React.Component {
         return (
     <div className="App">
     <header className="App-header"> 
-    <h1>Welcome to COOK or LOOK</h1>
+    <h1>Welcome to COOK or LOOK </h1>
     </header>
         <div id="homepage-button-div"> 
             <div id="dine-in-div">

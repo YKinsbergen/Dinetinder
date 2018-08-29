@@ -1,0 +1,88 @@
+/* AppMobile.css */
+@media only screen and (max-width: 600px) {
+    .App-title {
+      font-size: 2.5em;
+      }
+  
+    #homepage-button-div {
+        position: relative;
+        margin: 50px auto; 
+        background-color: #34302D;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+      }
+  
+      #dine-in-div /* Cooking */{
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        padding-top: 20px;
+        margin: 70px 28px;
+      }
+      
+      #dine-out-div /* Looking */{
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 70px 28px;
+      }
+      
+      #dine-out-link /* Looking */{
+        font-size: 35px;
+        color: #FBF6F3;
+        text-decoration: none;
+        padding: 6px 50px;
+        background-color: #DC6210;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      
+      #dine-in-link /* Cooking */{
+        font-size: 35px;
+        color: #FBF6F3;
+        text-decoration: none;
+        padding: 6px 50px;
+        background-color: #DC6210;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+        
+      #dine-out-link:hover {
+        font-size: 60px;
+        color: #FBF6F3;
+        text-decoration: none;
+        padding: 6px 50px;
+        background-color: #F9A420;
+        border-radius: 5px;
+        transition: 0.3s
+      }
+      
+      #dine-in-link:hover {
+        font-size: 60px;
+        color: #FBF6F3;
+        text-decoration: none;
+        padding: 6px 100px;
+        background-color: #F9A420;
+        border-radius: 5px;
+        transition: 0.3s
+      }
+  
+      .dhjKpi /* Splashpage text <p> */{
+        margin-top: 0;
+        font-size: 50px !important;
+        color: #DC6210 !important;
+        font-family: 'Libre Baskerville', sans-serif !important;
+      }
+  
+      .iwSUvz /* Splashpage img */ {
+        display: block;
+        margin: 0 auto;
+        max-width: 1000px !important;
+        max-height: 1000px !important;
+        width: auto !important;
+        height: auto !important;
+      }
+  
+  
+  }
