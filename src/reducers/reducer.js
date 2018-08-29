@@ -1,10 +1,10 @@
 //reducers/reducer.js
-
-import alexander from '../images/Mario.png'
-import mark from '../images/Anna.png'
-import rita from '../images/Bart.png'
-import job from '../images/Claire.png'
-import geert from '../images/patrick.png'
+import { ADD_USER } from '../actions/user'
+import mario from '../images/Mario.png'
+import anna from '../images/Anna.png'
+import bart from '../images/Bart.png'
+import claire from '../images/Claire.png'
+import patrick from '../images/patrick.png'
 
 const UserList = [
   {
@@ -14,53 +14,55 @@ const UserList = [
   dish: 'Bolognese',
   convoTopic: 'Music',
   time: '18:00 - 21:00',
-  dishPhoto: mark,
+  dishPhoto: anna,
   price: 25
   },
   {
   id: 2,
-  name: 'Rita',
+  name: 'Bart',
   address: 'Larenseweg, Hilversum',
   dish: 'Carpaccio',
   convoTopic: 'Politics',
   time: '18:00 - 23:00',
-  dishPhoto: rita,
+  dishPhoto: bart,
   price: 23.50
   },
   {
   id: 3,
-  name: 'Job',
+  name: 'Claire',
   address: 'Burgerweeshuispad, Amsterdam',
   dish: 'Hutspot',
   convoTopic: 'Life',
   time: '19:00 - 22:00',
-  dishPhoto: job,
+  dishPhoto: claire,
   price: 2
   },
   {
   id: 4,
-  name: 'Alexander',
+  name: 'Mario',
   address: 'Kikkerstraat, Rotterdam',
   dish: 'Kikkerbilletjes',
   convoTopic: 'Food',
   time: '17:00 - 20:00',
-  dishPhoto: alexander,
+  dishPhoto: mario,
   price: 40
   },
   {
   id: 5,
-  name: 'Geert',
+  name: 'Patrick',
   address: 'De Bijlmer, Amsterdam',
   dish: 'Foie gras',
   convoTopic: 'Dogs',
   time: '18:30 - 21:15',
-  dishPhoto: geert,
+  dishPhoto: patrick,
   price: 26
   }
 ]
 
 const userReducer = (state = UserList, action = {}) => {
     switch (action.type) {
+      case ADD_USER:
+        return state.concat({...action.payload})
     default:
       return state
     }

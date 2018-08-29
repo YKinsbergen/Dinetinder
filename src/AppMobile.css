@@ -18,14 +18,14 @@
         vertical-align: middle;
         display: inline-block;
         padding-top: 20px;
-        margin: 70px 28px;
+        margin: 70px auto;
       }
       
       #dine-out-div /* Looking */{
         position: relative;
         vertical-align: middle;
         display: inline-block;
-        margin: 70px 28px;
+        margin: 70px auto;
       }
       
       #dine-out-link /* Looking */{
