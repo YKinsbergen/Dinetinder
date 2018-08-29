@@ -1,17 +1,19 @@
 //reducers/reducer.js
 
-import alexander from '../images/alexander.png'
-import mark from '../images/mark.png'
-import rita from '../images/rita.png'
-import job from '../images/job.png'
-import geert from '../images/geert.png'
+import alexander from '../images/Mario.png'
+import mark from '../images/Anna.png'
+import rita from '../images/Bart.png'
+import job from '../images/Claire.png'
+import geert from '../images/patrick.png'
 
 const UserList = [
   {
   id: 1,
-  name: 'Mark',
+  name: 'Anna',
   address: 'Het torentje, Den Haag',
   dish: 'Bolognese',
+  convoTopic: 'Music',
+  time: '18:00 - 21:00',
   dishPhoto: mark,
   price: 25
   },
@@ -20,6 +22,8 @@ const UserList = [
   name: 'Rita',
   address: 'Larenseweg, Hilversum',
   dish: 'Carpaccio',
+  convoTopic: 'Politics',
+  time: '18:00 - 23:00',
   dishPhoto: rita,
   price: 23.50
   },
@@ -28,6 +32,8 @@ const UserList = [
   name: 'Job',
   address: 'Burgerweeshuispad, Amsterdam',
   dish: 'Hutspot',
+  convoTopic: 'Life',
+  time: '19:00 - 22:00',
   dishPhoto: job,
   price: 2
   },
@@ -36,6 +42,8 @@ const UserList = [
   name: 'Alexander',
   address: 'Kikkerstraat, Rotterdam',
   dish: 'Kikkerbilletjes',
+  convoTopic: 'Food',
+  time: '17:00 - 20:00',
   dishPhoto: alexander,
   price: 40
   },
@@ -44,6 +52,8 @@ const UserList = [
   name: 'Geert',
   address: 'De Bijlmer, Amsterdam',
   dish: 'Foie gras',
+  convoTopic: 'Dogs',
+  time: '18:30 - 21:15',
   dishPhoto: geert,
   price: 26
   }
