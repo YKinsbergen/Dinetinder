@@ -7,19 +7,21 @@ export default class Homepage extends React.Component {
     render() {
         return (
     <div className="App">
-    <header className="App-header"> <br/><br/> 
-      <h1 className="App-title">Welcome to Look or Cook</h1>
+    <header className="App-header"> 
+    <h1>Welcome to COOK or LOOK</h1>
     </header>
-    <div id="homepage-button-div"> <br/> <br/>
+        <div id="homepage-button-div"> 
+            <div>
             <Link to='/Cooking' id="dine-in">
             Cooking
-            </Link>         <br/><br/><br/><br/><br/>
+            </Link>  
+            </div>
+            <div>
             <Link to='/Looking' id="dine-out">
             Looking 
-            </Link>
+            </Link>    
             </div> 
-            <div>
-            </div>
+        </div> 
     </div>
         )
     }
