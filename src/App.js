@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 750)
+    , 200)
   }
 
 
@@ -29,7 +29,7 @@ class App extends Component {
     spinnerColor='#9ee5f8'
     textColor='#FBF6F3'
     logoSrc={logo}
-    text='Dining options coming up'
+    text='COOK or LOOK'
   > 
         <div>
           <Route exact path='/' component={Homepage}/>
