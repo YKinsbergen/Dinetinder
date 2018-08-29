@@ -74,6 +74,42 @@ body {
   border-radius: 10px;
 }
 
+#cooking-header {
+  margin-top: 60px;
+  font-size: 50px;
+}
+
+#form-div {
+  padding-top: 50px;
+  font-size: 20px;
+  line-height: 2.0;
+}
+
+#submit-button {
+  margin-top: 60px;
+  padding: 3px 15px;
+  font-size: 35px;
+  height: auto;
+  border: none;
+  color: #FBF6F3;
+  background-color: #DC6210;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  padding: 3px 15px;
+  font-size: 40px;
+  height: auto;
+  border: none;
+  color: #FBF6F3;
+  background-color: #F9A420;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 #dine-in-div /* Cooking */{
   position: relative;
   vertical-align: middle;
@@ -135,6 +171,7 @@ body {
   position: absolute;
   left:1%;
 }
+
 
 .swipe-container {
   width:25%;
