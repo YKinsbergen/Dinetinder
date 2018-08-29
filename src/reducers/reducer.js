@@ -14,7 +14,7 @@ const UserList = [
   dish: 'Bolognese',
   convoTopic: 'Music',
   time: '18:00 - 21:00',
-  dishPhoto: anna,
+  photo: anna,
   price: 25
   },
   {
@@ -24,7 +24,7 @@ const UserList = [
   dish: 'Carpaccio',
   convoTopic: 'Politics',
   time: '18:00 - 23:00',
-  dishPhoto: bart,
+  photo: bart,
   price: 23.50
   },
   {
@@ -34,7 +34,7 @@ const UserList = [
   dish: 'Hutspot',
   convoTopic: 'Life',
   time: '19:00 - 22:00',
-  dishPhoto: claire,
+  photo: claire,
   price: 2
   },
   {
@@ -44,7 +44,7 @@ const UserList = [
   dish: 'Kikkerbilletjes',
   convoTopic: 'Food',
   time: '17:00 - 20:00',
-  dishPhoto: mario,
+  photo: mario,
   price: 40
   },
   {
@@ -54,7 +54,7 @@ const UserList = [
   dish: 'Foie gras',
   convoTopic: 'Dogs',
   time: '18:30 - 21:15',
-  dishPhoto: patrick,
+  photo: patrick,
   price: 26
   }
 ]
