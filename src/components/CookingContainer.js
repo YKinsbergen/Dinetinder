@@ -24,11 +24,17 @@ class CookingContainer extends React.Component {
         id: (this.props.users.length + 1),
         name: this.state.name,
         dish: this.state.dish,
-        topic: this.state.topic,
+        convoTopic: this.state.convoTopic,
         price: this.state.price,
         time: this.state.time,
         location: this.state.location
-        })
+    })
+    event.target.name.value = ""
+    event.target.dish.value = ""
+    event.target.convoTopic.value = ""
+    event.target.price.value = ""
+    event.target.time.value = ""
+    event.target.location.value = ""
     }
 
     render() {
@@ -52,10 +58,10 @@ class CookingContainer extends React.Component {
                 <input type="text" name="dish" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-topic">
+        <div id="form-convoTopic">
             <label>
-                Topic: &nbsp;
-                <input type="text" name="topic" onChange={this.handleChange} />
+                convoTopic: &nbsp;
+                <input type="text" name="convoTopic" onChange={this.handleChange} />
             </label>
         </div>
         <div id="form-price">
