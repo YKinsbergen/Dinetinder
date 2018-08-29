@@ -7,6 +7,16 @@ import CookingContainer from './components/CookingContainer'
 import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
 import logo from './images/logo.png'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel, 
+        faUser, 
+        faUtensils, 
+        faComments, 
+        faTicketAlt, 
+        faClock, 
+        faMapMarkerAlt,
+        faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 class App extends Component {
   state={
@@ -16,7 +26,8 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 1500)
+    , 750)
+    library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
 
 
