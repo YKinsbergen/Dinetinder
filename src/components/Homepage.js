@@ -11,13 +11,13 @@ export default class Homepage extends React.Component {
     <h1>Welcome to COOK or LOOK</h1>
     </header>
         <div id="homepage-button-div"> 
-            <div>
-            <Link to='/Cooking' id="dine-in">
+            <div id="dine-in-div">
+            <Link to='/Cooking' id="dine-in-link">
             Cooking
             </Link>  
             </div>
-            <div>
-            <Link to='/Looking' id="dine-out">
+            <div id="dine-out-div">
+            <Link to='/Looking' id="dine-out-link">
             Looking 
             </Link>    
             </div> 
