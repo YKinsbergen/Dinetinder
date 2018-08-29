@@ -52,9 +52,9 @@ class CookingContainer extends React.Component {
     <div>
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
     </div>
-        <h2>Add a dish</h2>
+        <h1 id="cooking-header">Add your information</h1>
     
-    <form onSubmit={this.handleSubmit}>
+    <form onSubmit={this.handleSubmit} id="form-div">
         <div id="form-name">
             <label>
                 Name: &nbsp;
@@ -91,13 +91,13 @@ class CookingContainer extends React.Component {
                 <input type="text" name="location" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-location">
+        <div id="form-photo">
             <label>
                 URL: &nbsp;
                 <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" id="submit-button"/>
 
     </form>
         </div>)
