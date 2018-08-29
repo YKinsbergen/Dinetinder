@@ -1,6 +1,5 @@
 //components/CookingContainer.js
 import * as React from 'react'
-import ImageUploader from 'react-images-upload'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { connect } from 'react-redux'
@@ -21,10 +20,11 @@ class CookingContainer extends React.Component {
         event.preventDefault()
         if (event.target.name.value && 
             event.target.dish.value && 
-            event.target.topic.value && 
+            event.target.convoTopic.value && 
             event.target.price.value && 
             event.target.time.value &&
-            event.target.location.value) {
+            event.target.location.value &&
+            event.target.photo.value) {
         this.props.addUser({
             id: (this.props.users.length + 1),
             name: this.state.name,
