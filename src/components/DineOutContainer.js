@@ -45,7 +45,7 @@ class DineOutContainer extends React.Component {
             {this.props.users.map(user => {
               return <SwipeItem className='user-swipes' key={user.id}
               onClick={this.handleClick}>
-              <img src={user.dishPhoto} />
+              <img src={user.photo} />
               <div>                
                 <p><FontAwesomeIcon icon="user" className="swipe-icon"/> {user.name}</p>
                 <p><FontAwesomeIcon icon="utensils" className="swipe-icon"/> {user.dish}</p>

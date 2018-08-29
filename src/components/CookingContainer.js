@@ -8,12 +8,6 @@ import { addUser } from '../actions/user'
 
 class CookingContainer extends React.Component {
 
-    onDrop = (picture) => {
-        this.setState({
-            
-        });
-    }
-
     handleChange = (event) => {
         const value = event.target.value
         const name = event.target.name;
@@ -25,28 +19,36 @@ class CookingContainer extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-    
+        if (event.target.name.value && 
+            event.target.dish.value && 
+            event.target.topic.value && 
+            event.target.price.value && 
+            event.target.time.value &&
+            event.target.location.value) {
         this.props.addUser({
-        id: (this.props.users.length + 1),
-        name: this.state.name,
-        dish: this.state.dish,
-        convoTopic: this.state.convoTopic,
-        price: this.state.price,
-        time: this.state.time,
-        location: this.state.location,
-        dishPhoto: this.state.dishPhoto
-    })
-    event.target.name.value = ""
-    event.target.dish.value = ""
-    event.target.convoTopic.value = ""
-    event.target.price.value = ""
-    event.target.time.value = ""
-    event.target.location.value = ""
+            id: (this.props.users.length + 1),
+            name: this.state.name,
+            dish: this.state.dish,
+            convoTopic: this.state.convoTopic,
+            price: this.state.price,
+            time: this.state.time,
+            location: this.state.location,
+            photo: this.state.photo
+        })
+        event.target.name.value = ""
+        event.target.dish.value = ""
+        event.target.convoTopic.value = ""
+        event.target.price.value = ""
+        event.target.time.value = ""
+        event.target.location.value = ""
+        event.target.photo.value = ""
     }
+}
 
     render() {
     return (
     <div align="center">
+    
     <div>
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
     </div>
@@ -89,16 +91,15 @@ class CookingContainer extends React.Component {
                 <input type="text" name="location" onChange={this.handleChange} />
             </label>
         </div>
+        <div id="form-location">
+            <label>
+                URL: &nbsp;
+                <input type="text" name="photo" onChange={this.handleChange} />
+            </label>
+        </div>
             <input type="submit" value="Submit" />
 
     </form>
-    <ImageUploader
-                withIcon={true}
-                buttonText='Choose images'
-                onChange={this.onDrop}
-                imgExtension={['.jpg', '.gif', '.png', '.gif']}
-                maxFileSize={5242880}
-            />
         </div>)
     }
 }
