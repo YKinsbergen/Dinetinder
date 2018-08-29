@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat');
+
+
 .App {
   text-align: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: darkslategray;
 }
 
 .App-logo {
@@ -8,10 +16,12 @@
 }
 
 .App-header {
-  background-color: darkolivegreen;
+  background-color: darkslategrey;
+  font-family: 'Libre Baskerville', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
   height: 200px;
   padding: 20px;
-  color: black;
+  color: #FBF6F3;
 }
 
 .App-title {
@@ -40,10 +50,26 @@
 
 #dine-out {
   font-size: 50px;
+  color: #FBF6F3;
+  text-decoration: none;
+}
+#dine-out:hover {
+  font-size: 50px;
+  color: orange;
+  padding: 10px 10px;
+  border: 3px solid black;
 }
 
 #dine-in {
-  font-size: 50px
+  font-size: 50px;
+  color: #FBF6F3;
+  text-decoration: none;
+}
+#dine-in:hover {
+  font-size: 50px;
+  color: orange;
+  padding: 10px 10px;
+  border: 3px solid black;
 }
 
 .swipe-container {

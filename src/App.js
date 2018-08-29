@@ -5,7 +5,7 @@ import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'
 import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
-import dog from './images/dog.png'
+import logo from './images/logo.png'
 
 class App extends Component {
   state={
@@ -25,10 +25,10 @@ class App extends Component {
       <div>
     <LoadingScreen
     loading={loading}
-    bgColor='grey'
+    bgColor='darkslategrey'
     spinnerColor='#9ee5f8'
-    textColor='white'
-    logoSrc={dog}
+    textColor='#FBF6F3'
+    logoSrc={logo}
     text='Dining options coming up'
   > 
         <div>

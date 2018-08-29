@@ -22,7 +22,7 @@ export default class CookingContainer extends React.Component {
     // }
 
     render() {
-    return (<div>
+    return (<div align="center">
         <h2>Add a dish</h2>
     
         <form onSubmit={this.handleSubmit}>
