@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './AppMobile.css';
 import { Route, Link } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'
@@ -40,7 +41,7 @@ class App extends Component {
     spinnerColor='#9ee5f8'
     textColor='#FBF6F3'
     logoSrc={logo}
-    text='Dining options coming up'
+    text='COOK &nbsp; or &nbsp; LOOK'
   > 
         <div>
           <Route exact path='/' component={Homepage}/>
