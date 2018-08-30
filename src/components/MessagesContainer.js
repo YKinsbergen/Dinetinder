@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class MessagesContainer extends React.Component {
     showMessages = (userId) => {
         let person = this.props.messageArray.find(persona => persona.id === userId)
-        document.getElementById('conv-container').innerHTML = `<p> You're welcome at ${person.name}'s dinner party.<br/>The adres is ${person.address}. <br /> We will be talking about ${person.convoTopic}</p>`
+        document.getElementById('conv-container').innerHTML = `<p> You're welcome at ${person.name}'s dinner party.<br/>The address is ${person.address}. <br /> We will be talking about ${person.convoTopic}</p>`
     }
     render() {
         if (this.props.messageArray[0] !== undefined) {
@@ -19,7 +19,7 @@ class MessagesContainer extends React.Component {
                 <div id="dinners-wrap">
 
                     <div id="conv-container" className="container-pos">
-                            <p>To see your messages with someone, click on the button relating to the person</p>
+                            <p>To check your messages with someone, click on the corresponding person's button</p>
                     </div>
                 
                     <div id="all-dinners-container" className="container-pos">
