@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  background-color: darkslategray;
+  background-color: #437C84;
   font-size: 30px;
   font-family: 'Libre Baskerville', sans-serif;
   src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
@@ -55,7 +55,7 @@ body {
   margin: 0 auto;
   max-width: 1000px !important;
   max-height: 1000px !important;
-  width: auto !important;
+  width: auto ;
   height: auto !important;
 }
 
