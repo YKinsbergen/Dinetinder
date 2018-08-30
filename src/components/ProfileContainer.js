@@ -14,20 +14,20 @@ class ProfileContainer extends React.Component {
                     <h1 id="profile-header">
                         Profile page
                     </h1>
-                    <p>
+                    <p id="profile-name">
                         Name:
                     </p>
-                    <h2>{this.props.profile[0].name}</h2>
-                    <p> 
+                    <h2 id="profile-name-header">{this.props.profile[0].name}</h2>
+                    <p id="profile-address"> 
                         Address: 
                     </p>
-                    <h2>{this.props.profile[0].address}</h2>
-                    <h4>
+                    <h2 id="profile-address-header">{this.props.profile[0].address}</h2>
+                    <p id="profile-photo">
                     Your photo:
-                        <p>
+                    <p>
                         <img src={this.props.profile[0].photo} />
-                        </p>
-                    </h4>
+                    </p>
+                    </p>
                     </div>
                     <div align="center">
                     </div>
