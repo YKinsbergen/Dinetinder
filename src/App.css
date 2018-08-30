@@ -172,7 +172,7 @@ body {
   left:1%;
 }
 
-
+/* Swipe items in 'looking' */
 .swipe-container {
   width:25%;
   height:40%;
@@ -183,6 +183,7 @@ body {
   position: relative;
   color:#fff;
   border-radius: 25px !important;
+  border: solid 6px #34302D
 }
 .swipe-wrap {
   overflow: hidden;
