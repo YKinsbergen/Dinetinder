@@ -12,23 +12,15 @@ class DineOutContainer extends React.Component {
     userIndex: 0
   }
 
-  onTransactionEnd = (index, elem) => {
-    
-  }
-
   handleCallback = (index, elem) => {
     this.setState({userIndex: index})
     console.log(this.state)
   }
 
-  handleClick = (event) => {
-    console.log("clicked")
-  }
-
   handleJoinDinner = (event) => {
     event.preventDefault();
     this.props.addMessage({
-      message: this.props.users[this.state.userIndex]
+      ...this.props.users[this.state.userIndex]
     })
       document.getElementById('modal').classList.add('is-visible')
   }
@@ -79,7 +71,7 @@ class DineOutContainer extends React.Component {
 
           <div class="cd-popup" role="alert" id='modal'>
             <div class="cd-popup-container">
-              <p>Congratuolations you've been added to the list of guest attending <br/><br/> Check your messages </p>
+              <p>Congratulations you've been added to the list of guest attending <br/><br/> Check your messages </p>
               <ul class="cd-buttons">
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>

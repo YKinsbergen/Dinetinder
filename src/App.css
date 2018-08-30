@@ -172,6 +172,30 @@ body {
   left:1%;
 }
 
+#message-link {
+  position: absolute ;
+  right:0;
+  font-size: 20px;
+  color: #FBF6F3;
+  text-decoration: none;
+  padding: 2px 15px;
+  background-color: #DC6210;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+#message-link:hover {
+  position: absolute ;
+  right:0;
+  font-size: 30px;
+  color: #FBF6F3;
+  text-decoration: none;
+  padding: 4px 20px;
+  background-color: #F9A420;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
 /* Swipe items in 'looking' */
 .swipe-container {
   width:25%;

@@ -8,12 +8,13 @@ class MessagesContainer extends React.Component {
         if (this.props.messageArray[0] !== undefined) {
         return (
           <div>
-              {this.props.messageArray[0].message.name}
+              {this.props.messageArray[0].name}
+              {this.props.messageArray[1].name}
           </div>  
         )
         } else {
             return <div>
-                messageArray = undefined, can't display messages
+                You currently have no messages.
             </div>
         }
     }
