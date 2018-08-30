@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './AppMobile.css';
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'
 import Homepage from './components/Homepage'
@@ -25,7 +25,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 1500)
+    , 100)
     library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
 

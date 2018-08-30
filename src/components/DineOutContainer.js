@@ -2,26 +2,29 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Swipe, { SwipeItem } from 'swipejs/react';
-import DineOutList from './DineOutList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Route, Link } from 'react-router-dom'
 
 
 class DineOutContainer extends React.Component {
+  state={
+    userIndex: 0
+  }
+
   onTransactionEnd = (index, elem) => {
-    console.log("transaction")
+    
   }
 
   handleCallback = (index, elem) => {
-    console.log("callback")
+    this.setState({userIndex: index})
+    console.log(this.state)
   }
 
-  handleClick = (e) => {
-    console.log("click")
+  handleClick = (event) => {
   }
 
   handleJoinDinner = () => {
-    console.log("joining dinner")
+    console.log(this.state.userIndex)
   }
   render() {
     return (
@@ -46,7 +49,7 @@ class DineOutContainer extends React.Component {
               return <SwipeItem className='user-swipes' key={user.id}
               onClick={this.handleClick}>
               <img src={user.photo} />
-              <div>                
+              <div>     
                 <p><FontAwesomeIcon icon="user" className="swipe-icon"/> {user.name}</p>
                 <p><FontAwesomeIcon icon="utensils" className="swipe-icon"/> {user.dish}</p>
                 <p><FontAwesomeIcon icon="comments" className="swipe-icon"/> {user.convoTopic}</p>
