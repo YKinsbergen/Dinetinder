@@ -18,9 +18,9 @@ class ProfileContainer extends React.Component {
         return(
             <div>
                 <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-            
-            This is your profile page, please enter your information.
-
+                            <div align="center">
+                            Profile page
+                            </div>
                             <div align="center">
 
         <h1 id="cooking-header">Add your information</h1>
