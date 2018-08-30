@@ -7,6 +7,9 @@ export default class Homepage extends React.Component {
     render() {
         return (
     <div className="App">
+    <Link to='/Messages' id="message-link">
+    Messages
+    </Link>
     <header className="App-header"> 
     <h1>Welcome to COOK or LOOK </h1>
     </header>
