@@ -6,9 +6,11 @@ import { Route } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'
 import MessagesContainer from './components/MessagesContainer';
+import ProfileContainer from './components/ProfileContainer';
 import Homepage from './components/Homepage'
-import LoadingScreen from 'react-loading-screen';
 import logo from './images/logo.png'
+/* Packages */
+import LoadingScreen from 'react-loading-screen';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStroopwafel, 
         faUser, 
@@ -27,7 +29,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 100)
+    , 1500)
     library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
 
@@ -54,7 +56,8 @@ class App extends Component {
           component={DineOutContainer}/>
           <Route exact path='/Messages' 
           component={MessagesContainer}/>
-
+          <Route exact path='/Profile' 
+          component={ProfileContainer}/>
       </div>
     );
   }

@@ -2,6 +2,7 @@
 import * as React from 'react'
 import {Link} from 'react-router-dom'
 import messageicon from '../images/messages-icon.png'
+import profileicon from '../images/profile.png'
 
 export default class Homepage extends React.Component {
     render() {
@@ -9,6 +10,9 @@ export default class Homepage extends React.Component {
     <div className="App">
     <Link to='/Messages' id="message-link">
     <img src={messageicon} />
+    </Link>
+    <Link to='/Profile' id="profile-link">
+    <img src={profileicon} />
     </Link>
     <header className="App-header"> 
     <h1>Welcome to COOK or LOOK </h1>

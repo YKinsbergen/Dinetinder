@@ -12,7 +12,7 @@ class MessagesContainer extends React.Component {
           <div>
           <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
               {this.props.messageArray.map(message => <p>Dinner at: {message.name}</p>)}
-          </div>  
+          </div>
         )
         } else {
             return <div>
