@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './AppMobile.css';
+import './Modal.css';
 import { Route } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'

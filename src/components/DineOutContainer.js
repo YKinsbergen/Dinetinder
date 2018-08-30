@@ -22,13 +22,22 @@ class DineOutContainer extends React.Component {
   }
 
   handleClick = (event) => {
+    console.log("clicked")
   }
 
-  handleJoinDinner = () => {
+  handleJoinDinner = (event) => {
+    event.preventDefault();
     this.props.addMessage({
       message: this.props.users[this.state.userIndex]
     })
+      document.getElementById('modal').classList.add('is-visible')
   }
+  
+  closeModal = (event) => {
+			event.preventDefault();
+			document.getElementById('modal').classList.remove('is-visible')
+  }
+  
   render() {
     return (
       <div>
@@ -65,8 +74,17 @@ class DineOutContainer extends React.Component {
           </Swipe>
           
           <div style={{textAlign:"center"}}>
-              <a onClick={this.handleJoinDinner} className="swipe-button">join dinner</a>
+              <a onClick={this.handleJoinDinner} className="swipe-button cd-popup-trigger">join dinner</a>
           </div>
+
+          <div class="cd-popup" role="alert" id='modal'>
+            <div class="cd-popup-container">
+              <p>Congratuolations you've been added to the list of guest attending <br/><br/> Check your messages </p>
+              <ul class="cd-buttons">
+                <li><a onClick={this.closeModal}>Close</a></li>
+              </ul>
+            </div>
+          </div> 
 
       </div>
     );
