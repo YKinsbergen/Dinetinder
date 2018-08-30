@@ -1,14 +1,14 @@
 //components/Homepage.js
 import * as React from 'react'
 import {Link} from 'react-router-dom'
-// import 'action' from '../actions/?'
+import messageicon from '../images/messages-icon.png'
 
 export default class Homepage extends React.Component {
     render() {
         return (
     <div className="App">
     <Link to='/Messages' id="message-link">
-    Messages
+    <img src={messageicon} />
     </Link>
     <header className="App-header"> 
     <h1>Welcome to COOK or LOOK </h1>

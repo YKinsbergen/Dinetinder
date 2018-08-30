@@ -10,9 +10,8 @@ class MessagesContainer extends React.Component {
         if (this.props.messageArray[0] !== undefined) {
         return (
           <div>
-            <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-              {this.props.messageArray[0].name}
-              {this.props.messageArray[1].name}
+          <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
+              {this.props.messageArray.map(message => <p>Dinner at: {message.name}</p>)}
           </div>  
         )
         } else {
