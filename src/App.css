@@ -203,6 +203,25 @@ body {
   transition: 0.2s;
 }
 
+#message-icon-wrapper .message-icon-text {
+  font-size: 20px;
+  position: absolute;
+  top: 27px;
+  right: 45px;
+  width: 38px;
+  height: 60px;
+  line-height: 75px;
+  opacity: 0;
+  transition: 0.2s
+}
+#message-icon-wrapper:hover .message-icon-text {
+  top: 35px;
+  right: 50px;
+  visibility:visible;
+  opacity: 1;
+  transition: 0.2s
+}
+
 #profile-link {
   position: absolute ;
   top: 30px;
@@ -235,6 +254,28 @@ body {
   transition: 0.2s;
 }
 
+#profile-icon-wrapper .profile-icon-text {
+  font-size: 20px;
+  position: absolute;
+  top: 27px;
+  left: 3px;
+  width: 38px;
+  height: 60px;
+  line-height: 75px;
+  opacity: 0;
+  transition: 0.2s
+}
+
+#profile-icon-wrapper:hover .profile-icon-text {
+  position: absolute;
+  top: 35px;
+  left: 7px;
+  width: 38px;
+  height: 60px;
+  line-height: 75px;
+  opacity: 1;
+  transition: 0.2s
+}
 
 
 /* Swipe items in 'looking' */

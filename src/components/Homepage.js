@@ -8,12 +8,18 @@ export default class Homepage extends React.Component {
     render() {
         return (
     <div className="App">
-    <Link to='/Messages' id="message-link">
-    <img src={messageicon} />
-    </Link>
-    <Link to='/Profile' id="profile-link">
-    <img src={profileicon} />
-    </Link>
+    <div id="message-icon-wrapper">
+        <Link to='/Messages' id="message-link">
+            <img src={messageicon} />
+        <p class="message-icon-text">Messages</p>
+        </Link>
+    </div>
+    <div id="profile-icon-wrapper">
+         <Link to='/Profile' id="profile-link">
+            <img src={profileicon} />
+        <p class="profile-icon-text">Profile</p>
+        </Link>
+    </div>
     <header className="App-header"> 
     <h1>Welcome to COOK or LOOK </h1>
     </header>
