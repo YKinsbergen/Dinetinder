@@ -273,6 +273,10 @@ body {
   font-size: 25px;
 }
 
+#profile-header {
+  font-size: 50px;
+}
+
 #profile-error-header {
   color: white;
   margin-top: 20%;
@@ -289,6 +293,24 @@ body {
   font-size: 45px;
   margin-top: 20%;
   transition: 0.2s
+}
+
+#profile-name {
+  color: lightgrey;
+  font-size: 22px;
+}
+#profile-name-header {
+  font-size: 22px;
+}
+
+
+#profile-address {
+  color: lightgrey;
+  font-size: 22px;
+}
+#profile-photo {
+  color: lightgrey;
+  font-size: 22px;
 }
 
 /* Swipe items in 'looking' */

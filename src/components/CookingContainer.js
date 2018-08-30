@@ -18,30 +18,21 @@ class CookingContainer extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        if (event.target.name.value && 
-            event.target.dish.value && 
+        if (event.target.dish.value && 
             event.target.convoTopic.value && 
             event.target.price.value && 
-            event.target.time.value &&
-            event.target.address.value &&
-            event.target.photo.value) {
+            event.target.time.value) {
         this.props.addUser({
             id: (this.props.users.length + 1),
-            name: this.state.name,
             dish: this.state.dish,
             convoTopic: this.state.convoTopic,
             price: this.state.price,
             time: this.state.time,
-            address: this.state.address,
-            photo: this.state.photo
         })
-        event.target.name.value = ""
         event.target.dish.value = ""
         event.target.convoTopic.value = ""
         event.target.price.value = ""
-        event.target.time.value = ""
-        event.target.address.value = ""
-        event.target.photo.value = "",
+        event.target.time.value = "",
         document.getElementById("submitmessage").innerHTML = 
         'Congratulations, other users may now join you for dinner!'
     } else {
@@ -56,15 +47,9 @@ class CookingContainer extends React.Component {
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
     <div align="center">
 
-        <h1 id="cooking-header">Add your information</h1>
+        <h1 id="cooking-header">Add the dinner information</h1>
     
     <form onSubmit={this.handleSubmit} id="form-div">
-        <div id="form-name">
-            <label>
-                Name: &nbsp;
-                <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-        </div>
         <div id="form-dish">
             <label>
                 Dish: &nbsp;
@@ -73,7 +58,7 @@ class CookingContainer extends React.Component {
         </div>
         <div id="form-convoTopic">
             <label>
-                convoTopic: &nbsp;
+                Topic: &nbsp;
                 <input type="text" name="convoTopic" onChange={this.handleChange} />
             </label>
         </div>
@@ -87,18 +72,6 @@ class CookingContainer extends React.Component {
             <label>
                 Time: &nbsp;
                 <input type="text" name="time" onChange={this.handleChange} />
-            </label>
-        </div>
-        <div id="form-address">
-            <label>
-                address: &nbsp;
-                <input type="text" name="address" onChange={this.handleChange} />
-            </label>
-        </div>
-        <div id="form-photo">
-            <label>
-                URL: &nbsp;
-                <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
             <input type="submit" value="Submit" id="submit-button"/>
