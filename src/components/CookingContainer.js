@@ -41,7 +41,12 @@ class CookingContainer extends React.Component {
         event.target.price.value = ""
         event.target.time.value = ""
         event.target.location.value = ""
-        event.target.photo.value = ""
+        event.target.photo.value = "",
+        document.getElementById("submitmessage").innerHTML = 
+        'Congratulations, other users may now join you for dinner!'
+    } else {
+        document.getElementById("submitmessage").innerHTML = 
+        'Please fill in every box.'
     }
 }
 
@@ -98,8 +103,10 @@ class CookingContainer extends React.Component {
         </div>
             <input type="submit" value="Submit" id="submit-button"/>
 
-    </form>
-        </div></div>)
+    </form> <br/>
+    <div id="submitmessage"></div>
+        </div>
+    </div>)
     }
 }
 

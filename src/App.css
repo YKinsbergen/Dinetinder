@@ -13,7 +13,7 @@ body {
 }
 
 .App-header {
-  background-color: darkslategrey;
+  background-color: darkslategray;
   font-size: 30px;
   font-family: 'Libre Baskerville', sans-serif;
   src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
@@ -275,6 +275,10 @@ body {
   line-height: 75px;
   opacity: 1;
   transition: 0.2s
+}
+
+#submitmessage {
+  font-size: 25px;
 }
 
 
