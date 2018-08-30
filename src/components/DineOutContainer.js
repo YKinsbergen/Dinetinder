@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import Swipe, { SwipeItem } from 'swipejs/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Route, Link } from 'react-router-dom'
+import {addMessage} from '../actions/message'
 
 
 class DineOutContainer extends React.Component {
@@ -25,14 +26,18 @@ class DineOutContainer extends React.Component {
   }
 
   handleJoinDinner = (event) => {
-        event.preventDefault();
-        document.getElementById('modal').classList.add('is-visible')
-        console.log(this.state.userIndex)
+    event.preventDefault();
+    this.props.addMessage({
+      message: this.props.users[this.state.userIndex]
+    })
+      document.getElementById('modal').classList.add('is-visible')
   }
+  
   closeModal = (event) => {
 			event.preventDefault();
 			document.getElementById('modal').classList.remove('is-visible')
   }
+  
   render() {
     return (
       <div>
@@ -90,4 +95,4 @@ const mapStateToProps = (state) => ({
   users: state.userReducer
 })
 
-export default connect(mapStateToProps)(DineOutContainer)
+export default connect(mapStateToProps, {addMessage})(DineOutContainer)

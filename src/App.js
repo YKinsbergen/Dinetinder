@@ -5,6 +5,7 @@ import './Modal.css';
 import { Route } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
 import CookingContainer from './components/CookingContainer'
+import MessagesContainer from './components/MessagesContainer';
 import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
 import logo from './images/logo.png'
@@ -51,6 +52,9 @@ class App extends Component {
           component={CookingContainer}/>
           <Route exact path='/Looking' 
           component={DineOutContainer}/>
+          <Route exact path='/Messages' 
+          component={MessagesContainer}/>
+
       </div>
     );
   }
