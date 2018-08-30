@@ -8,12 +8,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  background-color: darkslategray;
+  background-color: #437C84;
   color: #FBF6F3;
 }
 
 .App-header {
-  background-color: darkslategray;
+  background-color: #437C84;
   font-size: 30px;
   font-family: 'Libre Baskerville', sans-serif;
   src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
@@ -21,7 +21,7 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
   padding: 20px;
-  color: #DC6210;
+  color: #FBF6F3;
 }
 
 .App-title {
@@ -281,6 +281,23 @@ body {
   font-size: 25px;
 }
 
+#profile-error-header {
+  color: white;
+  margin-top: 20%;
+  font-size: 40px;
+}
+#profile-error-link {
+  color: white;
+  margin-top: 20%;
+  font-size: 40px;
+  transition: 0.2s
+}
+#profile-error-link:hover {
+  color: darkslategray;
+  font-size: 45px;
+  margin-top: 20%;
+  transition: 0.2s
+}
 
 /* Swipe items in 'looking' */
 .swipe-container {

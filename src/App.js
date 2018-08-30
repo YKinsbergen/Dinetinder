@@ -29,10 +29,9 @@ class App extends Component {
   componentDidMount () {
     setTimeout(() =>
       this.setState({ loading: false })
-    , 1500)
+    , 200)
     library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
-
 
   render() {
     const {loading} = this.state
@@ -40,7 +39,7 @@ class App extends Component {
       <div>
     <LoadingScreen
     loading={loading}
-    bgColor='darkslategray'
+    bgColor='#34302D'
     spinnerColor='#9ee5f8'
     textColor='#FBF6F3'
     logoSrc={logo}

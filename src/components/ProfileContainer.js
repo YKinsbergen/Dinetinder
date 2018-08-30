@@ -5,78 +5,49 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class ProfileContainer extends React.Component {
-    handleChange = (event) => {
-        const value = event.target.value
-        const name = event.target.name;
-
-        this.setState({
-            [name]: value
-        })
-    }
-    
     render() {
+        if (this.props.profile[0] !== undefined) {
         return(
             <div>
                 <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-                            <div align="center">
-                            Profile page
-                            </div>
-                            <div align="center">
-
-        <h1 id="cooking-header">Add your information</h1>
-
-        <form onSubmit={this.handleSubmit} id="form-div">
-                <div id="form-name">
-                    <label>
-                        Name: &nbsp;
-                        <input type="text" name="name" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-dish">
-                    <label>
-                        Dish: &nbsp;
-                        <input type="text" name="dish" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-convoTopic">
-                    <label>
-                        convoTopic: &nbsp;
-                        <input type="text" name="convoTopic" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-price">
-                    <label>
-                        Price: &nbsp;
-                        <input type="text" name="price" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-time">
-                    <label>
-                        Time: &nbsp;
-                        <input type="text" name="time" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-location">
-                    <label>
-                        Location: &nbsp;
-                        <input type="text" name="location" onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div id="form-photo">
-                    <label>
-                        URL: &nbsp;
-                        <input type="text" name="photo" onChange={this.handleChange} />
-                    </label>
-                </div>
-                    <input type="submit" value="Submit" id="submit-button"/>
-
-                </form> <br/>
-                <div id="submitmessage"></div>
-                </div>
+                    <div align="center" id="profile-div">
+                    <h1 id="profile-header">
+                        Profile page
+                    </h1>
+                    <p>
+                        Name:
+                    </p>
+                    <h2>{this.props.profile[0].name}</h2>
+                    <p> 
+                        Address: 
+                    </p>
+                    <h2>{this.props.profile[0].address}</h2>
+                    <h4>
+                    Your photo:
+                        <p>
+                        <img src={this.props.profile[0].photo} />
+                        </p>
+                    </h4>
+                    </div>
+                    <div align="center">
+                    </div>
             </div>
-        )
+            )
+        } else {
+            return(
+                <div>
+                    <p align="center" id="profile-error-header">
+                        No profile found, please return to the <Link to="" id="profile-error-link">homepage</Link>
+                        &nbsp; to sign-up.
+                    </p>
+                </div>
+            )
+        }
     }
 }
 
+const mapStateToProps = (state) => ({
+    profile: state.profileReducer
+})
 
-export default connect (null)(ProfileContainer)
+export default connect (mapStateToProps)(ProfileContainer)

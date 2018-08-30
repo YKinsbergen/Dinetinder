@@ -3,9 +3,11 @@ import * as React from 'react'
 import {Link} from 'react-router-dom'
 import messageicon from '../images/messages-icon.png'
 import profileicon from '../images/profile.png'
+import { connect } from 'react-redux'
+import { addProfile } from '../actions/profile'
 
 let dog = false
-export default class Homepage extends React.Component {
+class Homepage extends React.Component {
     handleChange = (event) => {
         const value = event.target.value
         const name = event.target.name;
@@ -17,10 +19,15 @@ export default class Homepage extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        if (event.target.name.value)
-        return dog = true,
-        this.forceUpdate()
-        else {
+        if (event.target.name.value) {
+        dog = true,
+        this.props.addProfile({
+        name: this.state.name,
+        address: this.state.address,
+        photo: this.state.photo
+        })
+        this.forceUpdate() 
+        } else {
             document.getElementById("submitmessage").innerHTML = 'Please fill in every field.'
         }
 }
@@ -71,6 +78,18 @@ export default class Homepage extends React.Component {
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
+        <div id="form-name">
+            <label>
+                Address: &nbsp;
+                <input type="text" name="address" onChange={this.handleChange} />
+            </label>
+        </div>
+        <div id="form-name">
+            <label>
+                Photo URL: &nbsp;
+                <input type="text" name="photo" onChange={this.handleChange} />
+            </label>
+        </div>
                 <input type="submit" value="Submit" id="submit-button"/>
 
         </form> <br/>
@@ -79,3 +98,10 @@ export default class Homepage extends React.Component {
     }
 }
 }
+
+const mapStateToProps = (state) => ({
+    profile: state.profileReducer
+})
+
+
+export default connect(mapStateToProps, {addProfile})(Homepage)
