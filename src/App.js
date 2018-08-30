@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Link } from 'react-router-dom'
+import './AppMobile.css';
+import './Modal.css';
+import { Route } from 'react-router-dom'
 import DineOutContainer from './components/DineOutContainer'
+import CookingContainer from './components/CookingContainer'
+import MessagesContainer from './components/MessagesContainer';
 import Homepage from './components/Homepage'
 import LoadingScreen from 'react-loading-screen';
-import dog from './images/dog.png'
-
+import logo from './images/logo.png'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStroopwafel, 
+        faUser, 
+        faUtensils, 
+        faComments, 
+        faTicketAlt, 
+        faClock, 
+        faMapMarkerAlt,
+        faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 class App extends Component {
   state={
@@ -16,27 +28,33 @@ class App extends Component {
     setTimeout(() =>
       this.setState({ loading: false })
     , 100)
+    library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
+
 
   render() {
     const {loading} = this.state
     return (
       <div>
-      <LoadingScreen
+    <LoadingScreen
     loading={loading}
-    bgColor='grey'
+    bgColor='darkslategrey'
     spinnerColor='#9ee5f8'
-    textColor='white'
-    logoSrc={dog}
-    text='Dining options coming up'
+    textColor='#FBF6F3'
+    logoSrc={logo}
+    text='COOK &nbsp; or &nbsp; LOOK'
   > 
-          <div>
+        <div>
           <Route exact path='/' component={Homepage}/>
-          <Route exact path='/DineOutSwipePage' 
-          component={DineOutContainer}/>
         </div>
+    </LoadingScreen>
+          <Route exact path='/Cooking' 
+          component={CookingContainer}/>
+          <Route exact path='/Looking' 
+          component={DineOutContainer}/>
+          <Route exact path='/Messages' 
+          component={MessagesContainer}/>
 
-  </LoadingScreen>
       </div>
     );
   }
