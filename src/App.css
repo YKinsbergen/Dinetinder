@@ -283,4 +283,75 @@ body {
   cursor: pointer;
 }
 
+/* MessagesContainer styling */
 
+#dinners-wrap {
+  width:90%;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.container-pos {
+  display: block;
+  height:80vh;
+  width:100%;
+}
+
+#all-dinners-container {
+}
+
+#all-dinners-container ul {
+  text-align: center;
+  list-style: none;
+  padding:0;
+}
+
+#all-dinners-container li {
+  margin-top:20px;
+  background:orange;
+  cursor: pointer;
+  border-radius:20px;
+}
+#all-dinners-container li p {
+  padding:25px 0;
+}
+#conv-container {
+  border-radius:5px;
+  background:red;
+}
+
+@media only screen and (max-width: 600px) {
+
+} 
+
+@media only screen and (min-width: 600px) {
+
+} 
+
+@media only screen and (min-width: 768px) {
+  #dinners-wrap {
+    width:90%;
+    margin:0 auto;
+  }
+  
+  .container-pos {
+    display: inline-block;
+    height:80vh;
+    width:48%;
+  }
+  
+  #all-dinners-container {
+
+  }
+  #conv-container {
+    float:right;
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+
+} 
+
+@media only screen and (min-width: 1200px) {
+
+}
