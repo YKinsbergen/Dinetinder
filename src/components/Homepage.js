@@ -41,8 +41,8 @@ export default class Homepage extends React.Component {
         <p class="profile-icon-text">Profile</p>
         </Link>
     </div>
-    <header className="App-header"> 
-    <h1>Welcome to COOK or LOOK </h1>
+    <header className="header"> 
+    <h1>Welcome to <br />COOK or LOOK </h1>
     </header>
         <div id="homepage-button-div"> 
             <div id="dine-in-div">
