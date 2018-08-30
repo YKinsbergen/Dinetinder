@@ -8,8 +8,7 @@ class MessagesContainer extends React.Component {
         if (this.props.messageArray[0] !== undefined) {
         return (
           <div>
-              {this.props.messageArray[0].name}
-              {this.props.messageArray[1].name}
+              {this.props.messageArray.map(message => <p>Dinner at: {message.name}</p>)}
           </div>  
         )
         } else {

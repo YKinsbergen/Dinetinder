@@ -174,25 +174,33 @@ body {
 
 #message-link {
   position: absolute ;
-  right:0;
-  font-size: 20px;
+  top: 20px;
+  right: 40px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 2px 15px;
+  padding: 1px 15px;
   background-color: #DC6210;
-  border-radius: 5px;
+  width: 38px;
+  height: 60px;
+  line-height: 75px;
+  border-radius: 50%; 
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   transition: 0.2s;
 }
 
 #message-link:hover {
   position: absolute ;
-  right:0;
-  font-size: 30px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 4px 20px;
+  padding: 2px 20px;
   background-color: #F9A420;
-  border-radius: 5px;
+  width: 38px;
+  height: 65px;
+  line-height: 80px;
+  border-radius: 50%; 
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   transition: 0.2s;
 }
 
