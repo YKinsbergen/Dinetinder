@@ -71,7 +71,7 @@ class DineOutContainer extends React.Component {
 
           <div class="cd-popup" role="alert" id='modal'>
             <div class="cd-popup-container">
-              <p>Congratulations you've been added to the list of guest attending <br/><br/> Check your messages </p>
+              <p>Congratulations you've been added to {this.props.users[this.state.userIndex].name}'s list of guests attending <br/><br/> Check your messages </p>
               <ul class="cd-buttons">
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>
