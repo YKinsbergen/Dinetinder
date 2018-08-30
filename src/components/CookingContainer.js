@@ -47,11 +47,10 @@ class CookingContainer extends React.Component {
 
     render() {
     return (
-    <div align="center">
-    
     <div>
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-    </div>
+    <div align="center">
+
         <h1 id="cooking-header">Add your information</h1>
     
     <form onSubmit={this.handleSubmit} id="form-div">
@@ -100,7 +99,7 @@ class CookingContainer extends React.Component {
             <input type="submit" value="Submit" id="submit-button"/>
 
     </form>
-        </div>)
+        </div></div>)
     }
 }
 
