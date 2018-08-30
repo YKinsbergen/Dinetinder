@@ -19,7 +19,7 @@ class Homepage extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        if (event.target.name.value) {
+        if (event.target.name.value && event.target.address.value && event.target.photo.value) {
         dog = true,
         this.props.addProfile({
         name: this.state.name,
@@ -69,28 +69,29 @@ class Homepage extends React.Component {
         return (
 <div align="center">
 
-<h1 id="cooking-header">Welcome! <br/> <br/> Please create a profile</h1>
+<h1 id="cooking-header">Welcome!</h1> <br/>
+<h1 id="signup-header">Please create your profile</h1>
 
 <form onSubmit={this.handleSubmit} id="form-div">
         <div id="form-name">
             <label>
-                Name: &nbsp;
+                Name: &nbsp;     
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
         <div id="form-name">
             <label>
-                Address: &nbsp;
+                Address: &nbsp; 
                 <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
         <div id="form-name">
             <label>
-                Photo URL: &nbsp;
+                 Photo (URL): &nbsp;
                 <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
-                <input type="submit" value="Submit" id="submit-button"/>
+                <input type="submit" value="Log-in" id="submit-button"/>
 
         </form> <br/>
         <div id="submitmessage"></div>
