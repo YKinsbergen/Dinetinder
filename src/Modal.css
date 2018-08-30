@@ -30,7 +30,7 @@ xpopup
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(94, 110, 141, 0.9);
+  background-color: rgba(67, 124, 132, 0.8);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -95,17 +95,11 @@ xpopup
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-.cd-popup-container .cd-buttons li:first-child a {
-  background: #fc7169;
+.cd-popup-container .cd-buttons li a {
+  background: #dc6210;
 }
-.no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
-  background-color: #fc8982;
-}
-.cd-popup-container .cd-buttons li:last-child a {
-  background: #b6bece;
-}
-.no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
-  background-color: #c5ccd8;
+.no-touch .cd-popup-container .cd-buttons li a:hover {
+  background-color: #dc6210;
 }
 .cd-popup-container .cd-popup-close {
   position: absolute;

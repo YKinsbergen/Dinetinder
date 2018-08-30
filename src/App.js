@@ -30,6 +30,7 @@ class App extends Component {
     setTimeout(() =>
       this.setState({ loading: false })
     , 200)
+
     library.add(faStroopwafel, faUser, faUtensils, faComments, faTicketAlt, faClock, faMapMarkerAlt, faArrowLeft )
   }
 

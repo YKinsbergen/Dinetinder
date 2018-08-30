@@ -1,88 +1,109 @@
 /* AppMobile.css */
 @media only screen and (max-width: 600px) {
-    .App-title {
-      font-size: 2.5em;
-      }
+    .header h1{
+      font-size: 20px !important;
+      margin:35% auto 5% auto;
+    }
   
     #homepage-button-div {
-        position: relative;
-        margin: 50px auto; 
-        background-color: #34302D;
-        width: 300px;
-        height: 400px;
+        margin: 0 auto; 
         border-radius: 10px;
       }
   
       #dine-in-div /* Cooking */{
-        position: relative;
         vertical-align: middle;
         display: inline-block;
         padding-top: 20px;
-        margin: 70px auto;
+        margin: 10px auto;
       }
       
       #dine-out-div /* Looking */{
-        position: relative;
         vertical-align: middle;
         display: inline-block;
-        margin: 70px auto;
+        margin: 30px auto;
       }
       
       #dine-out-link /* Looking */{
         font-size: 35px;
-        color: #FBF6F3;
-        text-decoration: none;
-        padding: 6px 50px;
-        background-color: #DC6210;
-        border-radius: 5px;
-        transition: 0.3s;
+        width:100%;
       }
       
       #dine-in-link /* Cooking */{
         font-size: 35px;
-        color: #FBF6F3;
-        text-decoration: none;
-        padding: 6px 50px;
-        background-color: #DC6210;
-        border-radius: 5px;
-        transition: 0.3s;
-      }
         
-      #dine-out-link:hover {
-        font-size: 60px;
-        color: #FBF6F3;
-        text-decoration: none;
-        padding: 6px 50px;
-        background-color: #F9A420;
-        border-radius: 5px;
-        transition: 0.3s
       }
-      
-      #dine-in-link:hover {
-        font-size: 60px;
-        color: #FBF6F3;
-        text-decoration: none;
-        padding: 6px 100px;
-        background-color: #F9A420;
-        border-radius: 5px;
-        transition: 0.3s
+
+      .dhjKpi {
+        font-size:35px !important;
       }
   
-      .dhjKpi /* Splashpage text <p> */{
-        margin-top: 0;
-        font-size: 50px !important;
-        color: #DC6210 !important;
-        font-family: 'Libre Baskerville', sans-serif !important;
+      .swipe-container {
+        width:80%;
+        height:70%;
       }
-  
-      .iwSUvz /* Splashpage img */ {
-        display: block;
-        margin: 0 auto;
-        max-width: 1000px !important;
-        max-height: 1000px !important;
-        width: auto !important;
-        height: auto !important;
+      .container-pos {
+        height:40vh;
       }
+      #dine-in-div /* Cooking */{
+        padding: 10% 0;
+      }
+  }
   
+  @media only screen and (min-width: 600px) {
+    .App-header h1{
+      font-size: 20px !important;
+    }
+    .container-pos {
+      height:50vh;
+    }
+    .dhjKpi {
+      font-size:40px !important;
+    }
+    #dine-in-div /* Cooking */{
+      padding: 10% 0;
+    }
+  } 
+  
+  @media only screen and (min-width: 768px) {
+    #dinners-wrap {
+      width:90%;
+      margin:0 auto;
+    }
+    
+    .container-pos {
+      display: inline-block;
+      height:80vh;
+      width:48%;
+    }
+    
+    #all-dinners-container {
+  
+    }
+    #conv-container {
+      float:right;
+    }
+    .swipe-container {
+      width:50%;
+      height:60%;
+    }
+    .container-pos {
+      height:60vh;
+    }
+  } 
+  
+  @media only screen and (min-width: 992px) {
+    .swipe-container {
+      width:25%;
+      height:40%;
+    }
+    .container-pos {
+      height:70vh;
+    }
+    #dine-in-div /* Cooking */{
+      padding: 8% 0;
+    }
+  } 
+  
+  @media only screen and (min-width: 1200px) {
   
   }
