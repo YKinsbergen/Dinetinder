@@ -55,7 +55,7 @@ body {
   margin: 0 auto;
   max-width: 1000px !important;
   max-height: 1000px !important;
-  width: auto !important;
+  width: auto ;
   height: auto !important;
 }
 
