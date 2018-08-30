@@ -23,7 +23,7 @@ class CookingContainer extends React.Component {
             event.target.convoTopic.value && 
             event.target.price.value && 
             event.target.time.value &&
-            event.target.location.value &&
+            event.target.address.value &&
             event.target.photo.value) {
         this.props.addUser({
             id: (this.props.users.length + 1),
@@ -32,7 +32,7 @@ class CookingContainer extends React.Component {
             convoTopic: this.state.convoTopic,
             price: this.state.price,
             time: this.state.time,
-            location: this.state.location,
+            address: this.state.address,
             photo: this.state.photo
         })
         event.target.name.value = ""
@@ -40,13 +40,13 @@ class CookingContainer extends React.Component {
         event.target.convoTopic.value = ""
         event.target.price.value = ""
         event.target.time.value = ""
-        event.target.location.value = ""
+        event.target.address.value = ""
         event.target.photo.value = "",
         document.getElementById("submitmessage").innerHTML = 
         'Congratulations, other users may now join you for dinner!'
     } else {
         document.getElementById("submitmessage").innerHTML = 
-        'Please fill in every box.'
+        'Please fill in every field.'
     }
 }
 
@@ -89,10 +89,10 @@ class CookingContainer extends React.Component {
                 <input type="text" name="time" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-location">
+        <div id="form-address">
             <label>
-                Location: &nbsp;
-                <input type="text" name="location" onChange={this.handleChange} />
+                address: &nbsp;
+                <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
         <div id="form-photo">
