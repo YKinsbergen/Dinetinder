@@ -173,8 +173,8 @@ body {
 
 #message-link {
   position: absolute ;
-  top: 20px;
-  right: 40px;
+  top: 30px;
+  right: 50px;
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
@@ -202,6 +202,40 @@ body {
   -webkit-border-radius: 50%;
   transition: 0.2s;
 }
+
+#profile-link {
+  position: absolute ;
+  top: 30px;
+  left: 50px;
+  color: #FBF6F3;
+  text-decoration: none;
+  padding: 1px 15px;
+  background-color: #DC6210;
+  width: 38px;
+  height: 60px;
+  line-height: 75px;
+  border-radius: 50%; 
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: 0.2s;
+}
+
+#profile-link:hover {
+  position: absolute ;
+  color: #FBF6F3;
+  text-decoration: none;
+  padding: 2px 20px;
+  background-color: #F9A420;
+  width: 38px;
+  height: 65px;
+  line-height: 80px;
+  border-radius: 50%; 
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: 0.2s;
+}
+
+
 
 /* Swipe items in 'looking' */
 .swipe-container {
@@ -246,4 +280,7 @@ body {
   padding:15px 25px;
   background:#DC6210;
   border-radius:5px;
+  cursor: pointer;
 }
+
+
