@@ -27,14 +27,19 @@ class Homepage extends React.Component {
         address: this.state.address,
         photo: this.state.photo
         })
-        this.forceUpdate() 
+        localStorage.setItem('profile', JSON.stringify({
+        name: this.state.name,
+        address: this.state.address,
+        photo: this.state.photo
+        }))
+        this.forceUpdate()
         } else {
             document.getElementById("submitmessage").innerHTML = 'Please fill in every field.'
         }
 }
 
     render() {
-        if (dog === true) {
+        if (JSON.parse(localStorage.getItem('profile')) || this.props.profile.includes(undefined)) {
         return (
     <div className="App">
         <div id="message-icon-wrapper">
@@ -49,14 +54,14 @@ class Homepage extends React.Component {
             <p className="profile-icon-text">Profile</p>
             </Link>
         </div>
-    <header className="header"> 
+    <header className="header">
         <img src={logowhite}/>
     </header>
-        <div id="homepage-button-div"> 
+        <div id="homepage-button-div">
           <div id="dine-in-div">
             <Link to='/Cooking' id="dine-in-link">
               cooking dinner
-            </Link>  
+            </Link>
           </div>
           <div id="or">
              <p>or</p>
@@ -64,16 +69,16 @@ class Homepage extends React.Component {
           <div id="dine-out-div">
             <Link to='/Looking' id="dine-out-link">
               joining dinner
-            </Link>    
-          </div> 
-        </div> 
+            </Link>
+          </div>
+        </div>
     </div>
         )
     } else {
         return (
     <div align="center">
 
-        
+
         {/* <h1 id="signup-welcome-header">Cook & Look!</h1> <br/> */}
         <div id="cookandlook">
           <img src={logowhite} />
@@ -83,14 +88,14 @@ class Homepage extends React.Component {
         <h1 id="signup-header">Create your profile</h1>
         <div>
             <label id="profile-form-name">
-                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
+                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
 
         <div>
             <label id="profile-form-address">
-                Address: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                Address: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
