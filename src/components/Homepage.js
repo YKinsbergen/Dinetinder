@@ -36,20 +36,20 @@ class Homepage extends React.Component {
         if (dog === true) {
         return (
     <div className="App">
-    <div id="message-icon-wrapper">
-        <Link to='/Messages' id="message-link">
-            <img src={messageicon} />
-        <p className="message-icon-text">Messages</p>
-        </Link>
-    </div>
-    <div id="profile-icon-wrapper">
-         <Link to='/Profile' id="profile-link">
-            <img src={profileicon} />
-        <p className="profile-icon-text">Profile</p>
-        </Link>
-    </div>
+        <div id="message-icon-wrapper">
+            <Link to='/Messages' id="message-link">
+                <img src={messageicon} />
+            <p className="message-icon-text">Messages</p>
+            </Link>
+        </div>
+        <div id="profile-icon-wrapper">
+            <Link to='/Profile' id="profile-link">
+                <img src={profileicon} />
+            <p className="profile-icon-text">Profile</p>
+            </Link>
+        </div>
     <header className="header"> 
-    <h1>Welcome to <br />COOK or LOOK </h1>
+        <h1>Welcome to <br />COOK or LOOK </h1>
     </header>
         <div id="homepage-button-div"> 
             <div id="dine-in-div">
@@ -67,18 +67,19 @@ class Homepage extends React.Component {
         )
     } else {
         return (
-<div align="center">
+    <div align="center">
 
-<h1 id="signup-welcome-header">Welcome!</h1> <br/>
-<h1 id="signup-header">Create your profile</h1>
+        <h1 id="signup-welcome-header">Welcome!</h1> <br/>
+        <h1 id="signup-header">Create your profile</h1>
 
-<form onSubmit={this.handleSubmit} id="profile-form-div">
+        <form onSubmit={this.handleSubmit} id="profile-form-div">
         <div>
             <label id="profile-form-name">
                 Name: &nbsp;     
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
+
         <div>
             <label id="profile-form-address">
                 Address: &nbsp; 
