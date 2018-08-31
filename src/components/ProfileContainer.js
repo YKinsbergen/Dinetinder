@@ -25,7 +25,7 @@ class ProfileContainer extends React.Component {
                     <p id="profile-photo">
                     Your photo:
                     <p>
-                        <img src={this.props.profile[0].photo} />
+                        <img src={this.props.profile[0].photo} className="your-photo"/>
                     </p>
                     </p>
                     </div>

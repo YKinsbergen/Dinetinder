@@ -69,29 +69,29 @@ class Homepage extends React.Component {
         return (
 <div align="center">
 
-<h1 id="cooking-header">Welcome!</h1> <br/>
-<h1 id="signup-header">Please create your profile</h1>
+<h1 id="signup-welcome-header">Welcome!</h1> <br/>
+<h1 id="signup-header">Create your profile</h1>
 
-<form onSubmit={this.handleSubmit} id="form-div">
-        <div id="form-name">
-            <label>
+<form onSubmit={this.handleSubmit} id="profile-form-div">
+        <div>
+            <label id="profile-form-name">
                 Name: &nbsp;     
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-name">
-            <label>
+        <div>
+            <label id="profile-form-address">
                 Address: &nbsp; 
                 <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-name">
-            <label>
+        <div>
+            <label id="profile-form-photo">
                  Photo (URL): &nbsp;
                 <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
-                <input type="submit" value="Log-in" id="submit-button"/>
+                <input type="submit" value="Sign-up" id="profile-submit-button"/>
 
         </form> <br/>
         <div id="submitmessage"></div>

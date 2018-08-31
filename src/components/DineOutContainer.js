@@ -34,6 +34,8 @@ class DineOutContainer extends React.Component {
     if (this.props.profile[0] !== undefined) {
     return (
       <div>
+        <div>
+        <div id="looking-wrapper">
         <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
           <Swipe
             style={{display:"block", margin:"5% auto"}}
@@ -77,6 +79,8 @@ class DineOutContainer extends React.Component {
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>
             </div>
+          </div>
+          </div>
           </div>
       </div>
     );
