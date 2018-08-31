@@ -287,6 +287,16 @@ input {
   font-size: 25px;
 }
 
+/* Profile page */ 
+#profile-div {
+  margin: 0 auto;
+  background-color: darkslategrey;
+  width: 40%;
+  height: 45%;
+  padding-top: 1%;
+  border-radius: 20px;
+}
+
 #profile-header {
   font-size: 50px;
 }
@@ -416,10 +426,9 @@ input[type=text] {
 }
 
 .your-photo {
-  border: 5px solid darkslategrey;
-  border-radius: 10px;
+  border: 5px solid #746C67;
+  border-radius: 15px;
 }
-
 
 /* Swipe items in 'looking' */
 .swipe-container {
@@ -498,7 +507,7 @@ input[type=text] {
   width: 90%;
   height:76px;
   margin:20px auto 0 auto;
-  background:orange;
+  background:#ED8B49;
   cursor: pointer;
   border-radius:20px;
 }
