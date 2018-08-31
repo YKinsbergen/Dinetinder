@@ -1,5 +1,5 @@
 //reducers/reducer.js
-import { ADD_USER } from '../actions/user'
+import { ADD_USER, DELETE_DINNER } from '../actions/user'
 import mario from '../images/Mario.png'
 import anna from '../images/Anna.png'
 import bart from '../images/Bart.png'
@@ -63,6 +63,8 @@ const userReducer = (state = UserList, action = {}) => {
     switch (action.type) {
       case ADD_USER:
         return state.concat({...action.payload})
+      case DELETE_DINNER:
+        return state.filter(dinners => dinners.id !== parseInt(action.payload) )
     default:
       return state
     }
