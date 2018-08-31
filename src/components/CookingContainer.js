@@ -56,7 +56,9 @@ render() {
 
         <h1 id="cooking-header">Add the dinner information</h1>
         <div>{dinners.map(dinner =>
-                <div><a>The dinner {dinner.dish} added </a> <br /> <button onClick={this.handleDeleteDinner} id={dinner.id}>delete dinner</button></div>)}</div>
+                <div><a id="dinner-added">The dinner '{dinner.dish}' added </a> <br /> 
+                <button className="dinner-button" onClick={this.handleDeleteDinner} id={dinner.id}>delete dinner</button></div>)}
+        </div>
     <form onSubmit={this.handleSubmit} id="form-div">
         <div id="form-dish">
             <label>
