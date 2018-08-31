@@ -13,14 +13,9 @@ body {
 }
 
 .header {
-  background-color: #437C84;
-  font-size: 30px;
-  font-family: 'Libre Baskerville', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   padding: 20px;
-  color: #FBF6F3;
 }
 
 .App-title {
@@ -40,13 +35,13 @@ body {
   width: 30px !important;
   height: 30px !important;
   margin: 20px 8px !important;
-  color: #FBF6F3 !important;
+  color: darkslategray !important;
 }
 
 .dhjKpi /* Splashpage text <p> */{
   margin-top: 0;
-  font-size: 50px !important;
-  color: #DC6210 !important;
+  font-size: 70px !important;
+  color: #ED8B49 !important;
   font-family: 'Libre Baskerville', sans-serif !important;
 }
 
@@ -55,8 +50,9 @@ body {
   margin: 0 auto;
   max-width: 1000px !important;
   max-height: 1000px !important;
-  width: auto ;
-  height: auto !important;
+  width: 300px !important;
+  height: auto;
+  image-rendering: crisp-edges;
 }
 
 .userPhotos {
@@ -66,8 +62,8 @@ body {
 
 #homepage-button-div {
   position: relative;
-  margin: 0 auto; 
-  background-color: #34302D;
+  margin: 0 auto;
+  background-color: #FBF6F3;
   width: 90%;
   max-width:900px;
   border-radius: 10px;
@@ -93,7 +89,7 @@ body {
   height: auto;
   border: none;
   color: #FBF6F3;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   border-radius: 7px;
   transition: 0.3s;
   cursor: pointer;
@@ -111,51 +107,82 @@ body {
   cursor: pointer;
 }
 
+#or p{
+  color: #746C67;
+  font-size: 44px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 #dine-in-div /* Cooking */{
+  margin: 0 0;
 }
 
 #dine-out-div /* Looking */{
 }
 
 #dine-out-link {
-  font-size: 50px;
+  font-size: 44px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
-  background-color: #DC6210;
+  padding: 12px 100px;
+  background-color: #ED8B49;
   border-radius: 5px;
   transition: 0.3s;
 }
 
 #dine-in-link {
-  font-size: 50px;
+  font-size: 44px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
-  background-color: #DC6210;
+  padding: 12px 100px;
+  background-color: #ED8B49;
   border-radius: 5px;
   transition: 0.3s;
 }
-  
+
 #dine-out-link:hover {
-  font-size: 60px;
+  font-size: 50px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
+  padding: 16px 100px;
   background-color: #F9A420;
   border-radius: 5px;
   transition: 0.3s
 }
 
 #dine-in-link:hover {
-  font-size: 60px;
+  font-size: 50px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
+  padding: 16px 100px;
   background-color: #F9A420;
   border-radius: 5px;
   transition: 0.3s
 }
+
+/* dinner added */
+.dinner-button {
+  margin-top: 5px;
+  font-size: 15px;
+  width: 125px;
+  height: auto;
+  color: white;
+  background-color: #ED8B49;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.dinner-button:hover {
+  background-color: #F9A420;
+}
+#dinner-added {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+/* */
 
 .go-back {
   text-decoration: none;
@@ -165,16 +192,16 @@ body {
 
 #message-link {
   position: absolute ;
-  top: 30px;
-  right: 50px;
+  top: 10%;
+  right: 60px;
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   width: 38px;
   height: 60px;
   line-height: 75px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -189,7 +216,7 @@ body {
   width: 38px;
   height: 65px;
   line-height: 80px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -216,16 +243,16 @@ body {
 
 #profile-link {
   position: absolute ;
-  top: 30px;
-  left: 50px;
+  top: 10%;
+  left: 80px;
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   width: 38px;
   height: 60px;
   line-height: 75px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -240,7 +267,7 @@ body {
   width: 38px;
   height: 65px;
   line-height: 80px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -269,8 +296,28 @@ body {
   transition: 0.2s
 }
 
+input {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 25%;
+  padding: 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
 #submitmessage {
   font-size: 25px;
+}
+
+/* Profile page */ 
+#profile-div {
+  margin: 0 auto;
+  background-color: darkslategrey;
+  width: 40%;
+  height: 45%;
+  padding-top: 1%;
+  border-radius: 20px;
 }
 
 #profile-header {
@@ -298,31 +345,124 @@ body {
 #profile-name {
   color: lightgrey;
   font-size: 22px;
+  margin: 0 auto;
 }
 #profile-name-header {
-  font-size: 22px;
+  font-size: 30px;
+  margin: 3px auto;
 }
-
 
 #profile-address {
   color: lightgrey;
   font-size: 22px;
+  margin: 20px 0 auto;
 }
+
+#profile-address-header {
+  font-size: 30px;
+  margin: 3px auto;
+}
+
 #profile-photo {
   color: lightgrey;
   font-size: 22px;
+  margin: 20px 0 auto;
+}
+
+input[type=text] {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 25%;
+  padding: 7px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+/* Signup page */
+#signup-welcome-header {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+#cookandlook {
+  padding: 50px;
+}
+
+#signup-header {
+  padding-bottom: 20px;
+  color: #746C67;
+}
+
+#profile-form-div {
+  padding-top: 50px;
+  font-size: 20px;
+  line-height: 2.2;
+  background-color: #FBF6F3;
+  width: 40%;
+  max-width: 900px;
+  border-radius: 10px;
+  height: 450px;
+  max-height: 500px;
+}
+
+#profile-form-name {
+  position: relative;
+  font-size: 20px;
+  color: #746C67;
+}
+#profile-form-address {
+  position: relative;
+  font-size: 20px;
+  color: #746C67;
+}
+#profile-form-photo {
+  position: relative;
+  font-size: 20px;
+  color: #746C67;
+}
+
+#profile-submit-button {
+  margin-top: 8%;
+  padding: 6px 45px;
+  font-size: 22px;
+  height: 51px;
+  width: 226px;
+  border: none;
+  color: #FBF6F3;
+  background-color: #ED8B49;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#profile-submit-button:hover {
+  padding: 7px 50px;
+  font-size: 22px;
+  height: 51px;
+  border: none;
+  color: #FBF6F3;
+  background-color: #F9A420;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.your-photo {
+  border: 5px solid #746C67;
+  border-radius: 15px;
 }
 
 /* Swipe items in 'looking' */
 .swipe-container {
-  background:#DC6210;
+  background:#ED8B49;
   margin:0 auto;
   overflow:hidden;
   visibility: hidden;
   position: relative;
   color:#fff;
   border-radius: 25px !important;
-  border: solid 6px #34302D
+  border: solid 15px #34302D;
 }
 .swipe-wrap {
   overflow: hidden;
@@ -333,9 +473,9 @@ body {
   width: 100%;
   position: relative;
 }
-.swipe-container img { 
-  width:100%; 
-  height:100%; 
+.swipe-container img {
+  width:100%;
+  height:100%;
   max-height:295px !important;
 }
 
@@ -352,9 +492,14 @@ body {
   color: #FBF6F3;
   text-decoration: none;
   padding:15px 25px;
-  background:#DC6210;
+  background:#ED8B49;
   border-radius:5px;
   cursor: pointer;
+  transition: 0.3s
+}
+.swipe-button:hover {
+  background:#F9A420;
+  transition: 0.3s
 }
 
 /* MessagesContainer styling */
@@ -371,17 +516,21 @@ body {
 }
 
 #all-dinners-container {
+  background: #FBF6F3;
+  border-radius: 5px;
 }
 
 #all-dinners-container ul {
-  text-align: center;
+
   list-style: none;
   padding:0;
 }
 
 #all-dinners-container li {
-  margin-top:20px;
-  background:orange;
+  width: 90%;
+  height:76px;
+  margin:20px auto 0 auto;
+  background:#ED8B49;
   cursor: pointer;
   border-radius:20px;
 }
@@ -389,21 +538,16 @@ body {
   padding:25px 0;
 }
 #conv-container {
-  border-radius:5px;
-  background:red;
+  border-radius:20px;
+  background:darkslategray;
 }
 
-.iwSUvz /* Splashpage img */ {
-  display: block;
-  margin: 0 auto;
-  width: 30% !important;
-  height: 30% !important;
-  max-width:150px;
-  max-height: 150px;
+#conv-container p {
+  font-size: 25px;
+  padding: 3%;
+  padding-top: 0;
+  line-height: 2.0;
 }
-.dhjKpi /* Splashpage text <p> */{
-  margin-top: 0;
-  font-size: 50px !important;
-  color: #DC6210 !important;
-  font-family: 'Libre Baskerville', sans-serif !important;
-}
+#all-dinners-container > p { color:#34302D; text-align:center; }
+.small-img {width:50px; height:50px; margin:13px 25px 0 25px;}
+.arrow {width:30px; height:50px; margin:13px 25px 0 25px;}

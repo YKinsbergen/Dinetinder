@@ -3,6 +3,7 @@ import * as React from 'react'
 import {Link} from 'react-router-dom'
 import messageicon from '../images/messages-icon.png'
 import profileicon from '../images/profile.png'
+import logowhite from '../images/logowhite.png'
 import { connect } from 'react-redux'
 import { addProfile } from '../actions/profile'
 
@@ -36,64 +37,72 @@ class Homepage extends React.Component {
         if (dog === true) {
         return (
     <div className="App">
-    <div id="message-icon-wrapper">
-        <Link to='/Messages' id="message-link">
-            <img src={messageicon} />
-        <p class="message-icon-text">Messages</p>
-        </Link>
-    </div>
-    <div id="profile-icon-wrapper">
-         <Link to='/Profile' id="profile-link">
-            <img src={profileicon} />
-        <p class="profile-icon-text">Profile</p>
-        </Link>
-    </div>
+        <div id="message-icon-wrapper">
+            <Link to='/Messages' id="message-link">
+                <img src={messageicon} />
+            <p className="message-icon-text">Messages</p>
+            </Link>
+        </div>
+        <div id="profile-icon-wrapper">
+            <Link to='/Profile' id="profile-link">
+                <img src={profileicon} />
+            <p className="profile-icon-text">Profile</p>
+            </Link>
+        </div>
     <header className="header"> 
-    <h1>Welcome to <br />COOK or LOOK </h1>
+        <img src={logowhite}/>
     </header>
         <div id="homepage-button-div"> 
-            <div id="dine-in-div">
+          <div id="dine-in-div">
             <Link to='/Cooking' id="dine-in-link">
-            Cooking
+              cooking dinner
             </Link>  
-            </div>
-            <div id="dine-out-div">
+          </div>
+          <div id="or">
+             <p>or</p>
+          </div>
+          <div id="dine-out-div">
             <Link to='/Looking' id="dine-out-link">
-            Looking 
+              joining dinner
             </Link>    
-            </div> 
+          </div> 
         </div> 
     </div>
         )
     } else {
         return (
-<div align="center">
+    <div align="center">
 
-<h1 id="cooking-header">Welcome!</h1> <br/>
-<h1 id="signup-header">Please create your profile</h1>
+        
+        {/* <h1 id="signup-welcome-header">Cook & Look!</h1> <br/> */}
+        <div id="cookandlook">
+          <img src={logowhite} />
+        </div>
 
-<form onSubmit={this.handleSubmit} id="form-div">
-        <div id="form-name">
-            <label>
-                Name: &nbsp;     
+        <form onSubmit={this.handleSubmit} id="profile-form-div">
+        <h1 id="signup-header">Create your profile</h1>
+        <div>
+            <label id="profile-form-name">
+                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-name">
-            <label>
-                Address: &nbsp; 
+
+        <div>
+            <label id="profile-form-address">
+                Address: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
-        <div id="form-name">
-            <label>
+        <div>
+            <label id="profile-form-photo">
                  Photo (URL): &nbsp;
                 <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
-                <input type="submit" value="Log-in" id="submit-button"/>
+                <input type="submit" value="confirm" id="profile-submit-button"/>
 
-        </form> <br/>
+        </form>
         <div id="submitmessage"></div>
         </div>)
     }
