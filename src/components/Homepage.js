@@ -3,6 +3,7 @@ import * as React from 'react'
 import {Link} from 'react-router-dom'
 import messageicon from '../images/messages-icon.png'
 import profileicon from '../images/profile.png'
+import logowhite from '../images/logowhite.png'
 import { connect } from 'react-redux'
 import { addProfile } from '../actions/profile'
 
@@ -49,18 +50,18 @@ class Homepage extends React.Component {
             </Link>
         </div>
     <header className="header"> 
-        <h1>Welcome to <br />COOK or LOOK </h1>
+        <img src={logowhite}/>
     </header>
         <div id="homepage-button-div"> 
             <div id="dine-in-div">
-            <Link to='/Cooking' id="dine-in-link">
-            Cooking
-            </Link>  
+                <Link to='/Cooking' id="dine-in-link">
+                    Cooking
+                </Link>  
             </div>
             <div id="dine-out-div">
-            <Link to='/Looking' id="dine-out-link">
-            Looking 
-            </Link>    
+                <Link to='/Looking' id="dine-out-link">
+                    Looking 
+                </Link>    
             </div> 
         </div> 
     </div>
@@ -75,14 +76,14 @@ class Homepage extends React.Component {
         <form onSubmit={this.handleSubmit} id="profile-form-div">
         <div>
             <label id="profile-form-name">
-                Name: &nbsp;     
+                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>
 
         <div>
             <label id="profile-form-address">
-                Address: &nbsp; 
+                Address: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 <input type="text" name="address" onChange={this.handleChange} />
             </label>
         </div>
