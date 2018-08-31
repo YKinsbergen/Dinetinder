@@ -62,7 +62,7 @@ body {
 
 #homepage-button-div {
   position: relative;
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: #FBF6F3;
   width: 90%;
   max-width:900px;
@@ -140,7 +140,7 @@ body {
   border-radius: 5px;
   transition: 0.3s;
 }
-  
+
 #dine-out-link:hover {
   font-size: 50px;
   color: #FBF6F3;
@@ -178,7 +178,7 @@ body {
   width: 38px;
   height: 60px;
   line-height: 75px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -193,7 +193,7 @@ body {
   width: 38px;
   height: 65px;
   line-height: 80px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -229,7 +229,7 @@ body {
   width: 38px;
   height: 60px;
   line-height: 75px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -244,7 +244,7 @@ body {
   width: 38px;
   height: 65px;
   line-height: 80px;
-  border-radius: 50%; 
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   transition: 0.2s;
@@ -450,9 +450,9 @@ input[type=text] {
   width: 100%;
   position: relative;
 }
-.swipe-container img { 
-  width:100%; 
-  height:100%; 
+.swipe-container img {
+  width:100%;
+  height:100%;
   max-height:295px !important;
 }
 
@@ -493,17 +493,20 @@ input[type=text] {
 }
 
 #all-dinners-container {
-  font-size: 25px;
+  background: #FBF6F3;
+  border-radius: 5px;
 }
 
 #all-dinners-container ul {
-  text-align: center;
+
   list-style: none;
   padding:0;
 }
 
 #all-dinners-container li {
-  margin-top:20px;
+  width: 90%;
+  height:76px;
+  margin:20px auto 0 auto;
   background:#ED8B49;
   cursor: pointer;
   border-radius:20px;
@@ -512,7 +515,6 @@ input[type=text] {
   padding:25px 0;
 }
 #conv-container {
-  margin-top: 2%;
   border-radius:20px;
   background:darkslategray;
 }
@@ -523,3 +525,6 @@ input[type=text] {
   padding-top: 0;
   line-height: 2.0;
 }
+#all-dinners-container > p { color:#34302D; text-align:center; }
+.small-img {width:50px; height:50px; margin:13px 25px 0 25px;}
+.arrow {width:30px; height:50px; margin:13px 25px 0 25px;}
