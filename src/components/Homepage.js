@@ -76,7 +76,7 @@ class Homepage extends React.Component {
         
         {/* <h1 id="signup-welcome-header">Cook & Look!</h1> <br/> */}
         <div id="cookandlook">
-          <img src={CookAndLook} />
+          <img src={logowhite} />
         </div>
 
         <form onSubmit={this.handleSubmit} id="profile-form-div">
