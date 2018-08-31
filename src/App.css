@@ -45,7 +45,7 @@ body {
 
 .dhjKpi /* Splashpage text <p> */{
   margin-top: 0;
-  font-size: 50px !important;
+  font-size: 70px !important;
   color: #DC6210 !important;
   font-family: 'Libre Baskerville', sans-serif !important;
 }
@@ -55,8 +55,8 @@ body {
   margin: 0 auto;
   max-width: 1000px !important;
   max-height: 1000px !important;
-  width: auto ;
-  height: auto !important;
+  width: 250px !important;
+  height: auto;
 }
 
 .userPhotos {
@@ -393,17 +393,3 @@ body {
   background:red;
 }
 
-.iwSUvz /* Splashpage img */ {
-  display: block;
-  margin: 0 auto;
-  width: 30% !important;
-  height: 30% !important;
-  max-width:150px;
-  max-height: 150px;
-}
-.dhjKpi /* Splashpage text <p> */{
-  margin-top: 0;
-  font-size: 50px !important;
-  color: #DC6210 !important;
-  font-family: 'Libre Baskerville', sans-serif !important;
-}
