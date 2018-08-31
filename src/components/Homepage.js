@@ -3,7 +3,7 @@ import * as React from 'react'
 import {Link} from 'react-router-dom'
 import messageicon from '../images/messages-icon.png'
 import profileicon from '../images/profile.png'
-import CookAndLook from '../images/CookAndLook.png'
+import logowhite from '../images/logowhite.png'
 import { connect } from 'react-redux'
 import { addProfile } from '../actions/profile'
 
@@ -50,7 +50,7 @@ class Homepage extends React.Component {
             </Link>
         </div>
     <header className="header"> 
-        <h1>Welcome to <br />COOK or LOOK </h1>
+        <img src={logowhite}/>
     </header>
         <div id="homepage-button-div"> 
           <div id="dine-in-div">
@@ -83,7 +83,7 @@ class Homepage extends React.Component {
         <h1 id="signup-header">Create your profile</h1>
         <div>
             <label id="profile-form-name">
-                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      
+                Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
                 <input type="text" name="name" onChange={this.handleChange} />
             </label>
         </div>

@@ -13,14 +13,9 @@ body {
 }
 
 .header {
-  background-color: #437C84;
-  font-size: 30px;
-  font-family: 'Libre Baskerville', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   padding: 20px;
-  color: #FBF6F3;
 }
 
 .App-title {
@@ -40,7 +35,7 @@ body {
   width: 30px !important;
   height: 30px !important;
   margin: 20px 8px !important;
-  color: #FBF6F3 !important;
+  color: darkslategray !important;
 }
 
 .dhjKpi /* Splashpage text <p> */{
@@ -55,8 +50,9 @@ body {
   margin: 0 auto;
   max-width: 1000px !important;
   max-height: 1000px !important;
-  width: 250px !important;
+  width: 300px !important;
   height: auto;
+  image-rendering: crisp-edges;
 }
 
 .userPhotos {
@@ -173,8 +169,8 @@ body {
 
 #message-link {
   position: absolute ;
-  top: 30px;
-  right: 50px;
+  top: 10%;
+  right: 60px;
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
@@ -224,8 +220,8 @@ body {
 
 #profile-link {
   position: absolute ;
-  top: 30px;
-  left: 50px;
+  top: 10%;
+  left: 80px;
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
@@ -338,6 +334,16 @@ input {
   color: lightgrey;
   font-size: 22px;
   margin: 20px 0 auto;
+}
+
+input[type=text] {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 25%;
+  padding: 7px;
+  border: 2px solid grey;
+  border-radius: 5px;
 }
 
 /* Signup page */

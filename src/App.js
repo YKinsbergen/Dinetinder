@@ -40,7 +40,7 @@ class App extends Component {
       <div>
     <LoadingScreen
     loading={loading}
-    bgColor='#34302D'
+    bgColor='white'
     spinnerColor='#9ee5f8'
     textColor='#FBF6F3'
     logoSrc={logo}
