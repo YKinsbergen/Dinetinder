@@ -1,0 +1,109 @@
+/* AppMobile.css */
+@media only screen and (max-width: 600px) {
+    .header h1{
+      font-size: 20px !important;
+      margin:35% auto 5% auto;
+    }
+  
+    #homepage-button-div {
+        margin: 0 auto; 
+        border-radius: 10px;
+      }
+  
+      #dine-in-div /* Cooking */{
+        vertical-align: middle;
+        display: inline-block;
+        padding-top: 20px;
+        margin: 10px auto;
+      }
+      
+      #dine-out-div /* Looking */{
+        vertical-align: middle;
+        display: inline-block;
+        margin: 30px auto;
+      }
+      
+      #dine-out-link /* Looking */{
+        font-size: 35px;
+        width:100%;
+      }
+      
+      #dine-in-link /* Cooking */{
+        font-size: 35px;
+        
+      }
+
+      .dhjKpi {
+        font-size:35px !important;
+      }
+  
+      .swipe-container {
+        width:80%;
+        height:70%;
+      }
+      .container-pos {
+        height:40vh;
+      }
+      #dine-in-div /* Cooking */{
+        padding: 10% 0;
+      }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .App-header h1{
+      font-size: 20px !important;
+    }
+    .container-pos {
+      height:50vh;
+    }
+    .dhjKpi {
+      font-size:40px !important;
+    }
+    #dine-in-div /* Cooking */{
+      padding: 10% 0;
+    }
+  } 
+  
+  @media only screen and (min-width: 768px) {
+    #dinners-wrap {
+      width:90%;
+      margin:0 auto;
+    }
+    
+    .container-pos {
+      display: inline-block;
+      height:80vh;
+      width:48%;
+    }
+    
+    #all-dinners-container {
+  
+    }
+    #conv-container {
+      float:right;
+    }
+    .swipe-container {
+      width:50%;
+      height:60%;
+    }
+    .container-pos {
+      height:60vh;
+    }
+  } 
+  
+  @media only screen and (min-width: 992px) {
+    .swipe-container {
+      width:25%;
+      height:40%;
+    }
+    .container-pos {
+      height:70vh;
+    }
+    #dine-in-div /* Cooking */{
+      padding: 8% 0;
+    }
+  } 
+  
+  @media only screen and (min-width: 1200px) {
+  
+  }
