@@ -62,7 +62,7 @@ class DineOutContainer extends React.Component {
                 <p><FontAwesomeIcon icon="comments" className="swipe-icon"/> {user.convoTopic}</p>
                 <p><FontAwesomeIcon icon="ticket-alt" className="swipe-icon"/> € {user.price}</p>
                 <p><FontAwesomeIcon icon="clock" className="swipe-icon"/> {user.time}</p>
-                <p><FontAwesomeIcon icon="map-marker-alt" className="swipe-icon"/> 8 km</p>
+                <p><FontAwesomeIcon icon="map-marker-alt" className="swipe-icon"/>{user.address}</p>
               </div>
             </SwipeItem>
           })}
