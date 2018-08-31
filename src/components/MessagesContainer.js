@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import {addMessage} from '../actions/message'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import arrow from '../images/arrow.png'
 
 class MessagesContainer extends React.Component {
     showMessages = (userId) => {
@@ -15,17 +16,18 @@ class MessagesContainer extends React.Component {
         return (
             <div>
                 <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-            
+
                 <div id="dinners-wrap">
 
                     <div id="conv-container" className="container-pos">
                             <p>To check your messages with someone, click on the corresponding person's button</p>
                     </div>
-                
+
                     <div id="all-dinners-container" className="container-pos">
+                    <p>all messages</p>
                         <ul>
-                            {this.props.messageArray.map(message => 
-                                    <li><p onClick={() => this.showMessages(message.id)}>{message.name}'s dinner event</p></li>
+                            {this.props.messageArray.map(message =>
+                                    <li><img class="small-img" src={message.photo} align="left"/><img src={arrow} align="right" class="arrow"/><p onClick={() => this.showMessages(message.id)}>{message.name}</p></li>
                             )}
                         </ul>
                     </div>
