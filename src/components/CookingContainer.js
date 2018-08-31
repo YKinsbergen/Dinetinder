@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { connect } from 'react-redux'
-import { addUser } from '../actions/user'
+import { addUser, deleteDinner } from '../actions/user'
 
 class CookingContainer extends React.Component {
 
@@ -15,41 +15,48 @@ class CookingContainer extends React.Component {
         [name]: value
     })
 }
-
+handleDeleteDinner = (id) => {
+  this.props.deleteDinner(id.target.id)
+}
     handleSubmit = (event) => {
         event.preventDefault()
-        if (event.target.dish.value && 
-            event.target.convoTopic.value && 
-            event.target.price.value && 
+        if (event.target.dish.value &&
+            event.target.convoTopic.value &&
+            event.target.price.value &&
             event.target.time.value) {
         this.props.addUser({
             id: (this.props.users.length + 1),
+            name: this.props.profile[0].name,
+            address: this.props.profile[0].address,
             dish: this.state.dish,
             convoTopic: this.state.convoTopic,
             price: this.state.price,
             time: this.state.time,
+            photo: this.props.profile[0].photo
         })
         event.target.dish.value = ""
         event.target.convoTopic.value = ""
         event.target.price.value = ""
         event.target.time.value = "",
-        document.getElementById("submitmessage").innerHTML = 
+        document.getElementById("submitmessage").innerHTML =
         'Congratulations, other users may now join you for dinner!'
     } else {
-        document.getElementById("submitmessage").innerHTML = 
+        document.getElementById("submitmessage").innerHTML =
         'Please fill in every field.'
     }
 }
 
-    render() {
-        if (this.props.profile[0] !== undefined) {
+render() {
+    if (this.props.profile[0] !== undefined) {
+      const dinners = this.props.users.filter(user => user.name == this.props.profile[0].name)
     return (
     <div>
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
     <div align="center">
 
         <h1 id="cooking-header">Add the dinner information</h1>
-    
+        <div>{dinners.map(dinner =>
+                <div><a>The dinner {dinner.dish} added </a> <br /> <button onClick={this.handleDeleteDinner} id={dinner.id}>delete dinner</button></div>)}</div>
     <form onSubmit={this.handleSubmit} id="form-div">
         <div id="form-dish">
             <label>
@@ -100,4 +107,4 @@ const mapStateToProps = (state) => ({
 })
 
 
-export default connect(mapStateToProps, {addUser})(CookingContainer)
+export default connect(mapStateToProps, {addUser, deleteDinner})(CookingContainer)

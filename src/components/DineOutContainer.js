@@ -19,21 +19,28 @@ class DineOutContainer extends React.Component {
 
   handleJoinDinner = (event) => {
     event.preventDefault();
+    if (this.props.messages.find(message => message.id == this.state.userIndex+1)){
+      document.getElementById('modalError').classList.add('is-visible')
+    } else {
     this.props.addMessage({
       ...this.props.users[this.state.userIndex]
     })
       document.getElementById('modal').classList.add('is-visible')
+    }
   }
   
   closeModal = (event) => {
 			event.preventDefault();
-			document.getElementById('modal').classList.remove('is-visible')
+      document.getElementById('modal').classList.remove('is-visible')
+      document.getElementById('modalError').classList.remove('is-visible')
   }
   
   render() {
     if (this.props.profile[0] !== undefined) {
     return (
       <div>
+        <div>
+        <div id="looking-wrapper">
         <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
           <Swipe
             style={{display:"block", margin:"5% auto"}}
@@ -70,15 +77,24 @@ class DineOutContainer extends React.Component {
               <a onClick={this.handleJoinDinner} className="swipe-button cd-popup-trigger">join dinner</a>
           </div>
 
-          <div class="cd-popup" role="alert" id='modal'>
-            <div class="cd-popup-container">
+          <div className="cd-popup" role="alert" id='modal'>
+            <div className="cd-popup-container">
               <p>Congratulations! You've now been added to {this.props.users[this.state.userIndex].name}'s list of attending guests.<br/><br/> Check your messages for the details.</p>
-              <ul class="cd-buttons">
+              <ul className="cd-buttons">
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>
             </div>
-          </div> 
-
+          </div>
+          <div className="cd-popup" role="alert" id='modalError'>
+            <div className="cd-popup-container">
+              <p>This dinner has already been added to your message!</p>
+              <ul className="cd-buttons">
+                <li><a onClick={this.closeModal}>Close</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div>
       </div>
     );
   } else {
@@ -96,7 +112,8 @@ class DineOutContainer extends React.Component {
 
 const mapStateToProps = (state) => ({
   users: state.userReducer,
-  profile: state.profileReducer
+  profile: state.profileReducer,
+  messages: state.messageReducer
 })
 
 export default connect(mapStateToProps, {addMessage})(DineOutContainer)
