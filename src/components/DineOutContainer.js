@@ -70,10 +70,10 @@ class DineOutContainer extends React.Component {
               <a onClick={this.handleJoinDinner} className="swipe-button cd-popup-trigger">join dinner</a>
           </div>
 
-          <div class="cd-popup" role="alert" id='modal'>
-            <div class="cd-popup-container">
+          <div className="cd-popup" role="alert" id='modal'>
+            <div className="cd-popup-container">
               <p>Congratulations! You've now been added to {this.props.users[this.state.userIndex].name}'s list of attending guests.<br/><br/> Check your messages for the details.</p>
-              <ul class="cd-buttons">
+              <ul className="cd-buttons">
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>
             </div>
