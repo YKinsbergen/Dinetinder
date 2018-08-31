@@ -42,6 +42,7 @@ class CookingContainer extends React.Component {
 }
 
     render() {
+        if (this.props.profile[0] !== undefined) {
     return (
     <div>
     <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
@@ -80,11 +81,22 @@ class CookingContainer extends React.Component {
     <div id="submitmessage"></div>
         </div>
     </div>)
+    } else {
+        return(
+            <div>
+                <p align="center" id="profile-error-header">
+                    No profile found, please return to the <Link to="" id="profile-error-link">homepage</Link>
+                    &nbsp; to sign-up.
+                </p>
+            </div>
+        )
     }
+}
 }
 
 const mapStateToProps = (state) => ({
-    users: state.userReducer
+    users: state.userReducer,
+    profile: state.profileReducer
 })
 
 

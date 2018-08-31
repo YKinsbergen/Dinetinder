@@ -11,7 +11,7 @@ class MessagesContainer extends React.Component {
         document.getElementById('conv-container').innerHTML = `<p> You're welcome at ${person.name}'s dinner party.<br/>The address is ${person.address}. <br /> We will be talking about ${person.convoTopic}</p>`
     }
     render() {
-        if (this.props.messageArray[0] !== undefined) {
+        if (this.props.messageArray[0] !== undefined && this.props.profile[0] !== undefined) {
         return (
             <div>
                 <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
@@ -33,16 +33,26 @@ class MessagesContainer extends React.Component {
                 </div>
             </div>
         )
-        } else {
+        } else if (this.props.messageArray[0] === undefined && this.props.profile[0] !== undefined){
             return <div>
                  <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
                 <h2 style={{textAlign:"center"}}>You currently have no messages.</h2>
             </div>
-        }
+        } else {
+                return(
+                    <div>
+                        <p align="center" id="profile-error-header">
+                            No profile found, please return to the <Link to="" id="profile-error-link">homepage</Link>
+                            &nbsp; to sign-up.
+                        </p>
+                    </div>
+                )
+            }
     }
 }
 const mapStateToProps = (state) => ({
-    messageArray: state.messageReducer
+    messageArray: state.messageReducer,
+    profile: state.profileReducer
 })
 
 export default connect(mapStateToProps, {addMessage})(MessagesContainer)
