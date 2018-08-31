@@ -161,6 +161,25 @@ body {
   transition: 0.3s
 }
 
+/* dinner added */
+.dinner-button {
+  margin-top: 5px;
+  font-size: 15px;
+  width: 125px;
+  height: auto;
+  color: white;
+  background-color: #ED8B49;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+#dinner-added {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+/* */
+
 .go-back {
   text-decoration: none;
   color:white;
