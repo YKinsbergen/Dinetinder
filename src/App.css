@@ -41,7 +41,7 @@ body {
 .dhjKpi /* Splashpage text <p> */{
   margin-top: 0;
   font-size: 70px !important;
-  color: #DC6210 !important;
+  color: #ED8B49 !important;
   font-family: 'Libre Baskerville', sans-serif !important;
 }
 
@@ -63,7 +63,7 @@ body {
 #homepage-button-div {
   position: relative;
   margin: 0 auto; 
-  background-color: #34302D;
+  background-color: #FBF6F3;
   width: 90%;
   max-width:900px;
   border-radius: 10px;
@@ -89,7 +89,7 @@ body {
   height: auto;
   border: none;
   color: #FBF6F3;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   border-radius: 7px;
   transition: 0.3s;
   cursor: pointer;
@@ -107,47 +107,55 @@ body {
   cursor: pointer;
 }
 
+#or p{
+  color: #746C67;
+  font-size: 44px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 #dine-in-div /* Cooking */{
+  margin: 0 0;
 }
 
 #dine-out-div /* Looking */{
 }
 
 #dine-out-link {
-  font-size: 50px;
+  font-size: 44px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
-  background-color: #DC6210;
+  padding: 12px 100px;
+  background-color: #ED8B49;
   border-radius: 5px;
   transition: 0.3s;
 }
 
 #dine-in-link {
-  font-size: 50px;
+  font-size: 44px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
-  background-color: #DC6210;
+  padding: 12px 100px;
+  background-color: #ED8B49;
   border-radius: 5px;
   transition: 0.3s;
 }
   
 #dine-out-link:hover {
-  font-size: 60px;
+  font-size: 50px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
+  padding: 16px 100px;
   background-color: #F9A420;
   border-radius: 5px;
   transition: 0.3s
 }
 
 #dine-in-link:hover {
-  font-size: 60px;
+  font-size: 50px;
   color: #FBF6F3;
   text-decoration: none;
-  padding: 6px 100px;
+  padding: 16px 100px;
   background-color: #F9A420;
   border-radius: 5px;
   transition: 0.3s
@@ -166,7 +174,7 @@ body {
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   width: 38px;
   height: 60px;
   line-height: 75px;
@@ -217,7 +225,7 @@ body {
   color: #FBF6F3;
   text-decoration: none;
   padding: 1px 15px;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   width: 38px;
   height: 60px;
   line-height: 75px;
@@ -263,6 +271,16 @@ body {
   line-height: 75px;
   opacity: 1;
   transition: 0.2s
+}
+
+input {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 25%;
+  padding: 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
 }
 
 #submitmessage {
@@ -334,39 +352,52 @@ input[type=text] {
   margin: 20px 0;
 }
 
+#cookandlook {
+  padding: 50px;
+}
+
+#signup-header {
+  padding-bottom: 20px;
+  color: #746C67;
+}
+
 #profile-form-div {
   padding-top: 50px;
   font-size: 20px;
   line-height: 2.2;
-  background-color: darkslategray;
-  width: 37%;
-  max-width:900px;
+  background-color: #FBF6F3;
+  width: 40%;
+  max-width: 900px;
   border-radius: 10px;
-  height:50vh;
-  max-height:400px;
+  height: 450px;
+  max-height: 500px;
 }
 
 #profile-form-name {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
+  color: #746C67;
 }
 #profile-form-address {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
+  color: #746C67;
 }
 #profile-form-photo {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
+  color: #746C67;
 }
 
 #profile-submit-button {
-  margin-top: 15%;
+  margin-top: 8%;
   padding: 6px 45px;
-  font-size: 35px;
-  height: auto;
+  font-size: 22px;
+  height: 51px;
+  width: 226px;
   border: none;
   color: #FBF6F3;
-  background-color: #DC6210;
+  background-color: #ED8B49;
   border-radius: 7px;
   transition: 0.3s;
   cursor: pointer;
@@ -374,8 +405,8 @@ input[type=text] {
 
 #profile-submit-button:hover {
   padding: 7px 50px;
-  font-size: 40px;
-  height: auto;
+  font-size: 22px;
+  height: 51px;
   border: none;
   color: #FBF6F3;
   background-color: #F9A420;
@@ -392,7 +423,7 @@ input[type=text] {
 
 /* Swipe items in 'looking' */
 .swipe-container {
-  background:#DC6210;
+  background:#ED8B49;
   margin:0 auto;
   overflow:hidden;
   visibility: hidden;
@@ -429,7 +460,7 @@ input[type=text] {
   color: #FBF6F3;
   text-decoration: none;
   padding:15px 25px;
-  background:#DC6210;
+  background:#ED8B49;
   border-radius:5px;
   cursor: pointer;
   transition: 0.3s

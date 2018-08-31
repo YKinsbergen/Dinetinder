@@ -53,16 +53,19 @@ class Homepage extends React.Component {
         <img src={logowhite}/>
     </header>
         <div id="homepage-button-div"> 
-            <div id="dine-in-div">
-                <Link to='/Cooking' id="dine-in-link">
-                    Cooking
-                </Link>  
-            </div>
-            <div id="dine-out-div">
-                <Link to='/Looking' id="dine-out-link">
-                    Looking 
-                </Link>    
-            </div> 
+          <div id="dine-in-div">
+            <Link to='/Cooking' id="dine-in-link">
+              cooking dinner
+            </Link>  
+          </div>
+          <div id="or">
+             <p>or</p>
+          </div>
+          <div id="dine-out-div">
+            <Link to='/Looking' id="dine-out-link">
+              joining dinner
+            </Link>    
+          </div> 
         </div> 
     </div>
         )
@@ -70,10 +73,14 @@ class Homepage extends React.Component {
         return (
     <div align="center">
 
-        <h1 id="signup-welcome-header">Welcome!</h1> <br/>
-        <h1 id="signup-header">Create your profile</h1>
+        
+        {/* <h1 id="signup-welcome-header">Cook & Look!</h1> <br/> */}
+        <div id="cookandlook">
+          <img src={CookAndLook} />
+        </div>
 
         <form onSubmit={this.handleSubmit} id="profile-form-div">
+        <h1 id="signup-header">Create your profile</h1>
         <div>
             <label id="profile-form-name">
                 Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
@@ -93,9 +100,9 @@ class Homepage extends React.Component {
                 <input type="text" name="photo" onChange={this.handleChange} />
             </label>
         </div>
-                <input type="submit" value="Sign-up" id="profile-submit-button"/>
+                <input type="submit" value="confirm" id="profile-submit-button"/>
 
-        </form> <br/>
+        </form>
         <div id="submitmessage"></div>
         </div>)
     }
