@@ -287,6 +287,16 @@ input {
   font-size: 25px;
 }
 
+/* Profile page */ 
+#profile-div {
+  margin: 0 auto;
+  background-color: darkslategrey;
+  width: 40%;
+  height: 45%;
+  padding-top: 1%;
+  border-radius: 20px;
+}
+
 #profile-header {
   font-size: 50px;
 }
@@ -416,10 +426,9 @@ input[type=text] {
 }
 
 .your-photo {
-  border: 5px solid darkslategrey;
-  border-radius: 10px;
+  border: 5px solid #746C67;
+  border-radius: 15px;
 }
-
 
 /* Swipe items in 'looking' */
 .swipe-container {
@@ -484,6 +493,7 @@ input[type=text] {
 }
 
 #all-dinners-container {
+  font-size: 25px;
 }
 
 #all-dinners-container ul {
@@ -494,7 +504,7 @@ input[type=text] {
 
 #all-dinners-container li {
   margin-top:20px;
-  background:orange;
+  background:#ED8B49;
   cursor: pointer;
   border-radius:20px;
 }
@@ -502,6 +512,14 @@ input[type=text] {
   padding:25px 0;
 }
 #conv-container {
-  border-radius:5px;
-  background:red;
+  margin-top: 2%;
+  border-radius:20px;
+  background:darkslategray;
+}
+
+#conv-container p {
+  font-size: 25px;
+  padding: 3%;
+  padding-top: 0;
+  line-height: 2.0;
 }

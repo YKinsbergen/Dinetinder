@@ -10,10 +10,11 @@ class ProfileContainer extends React.Component {
         return(
             <div>
                 <p><Link to="" className="go-back"><FontAwesomeIcon icon="arrow-left"/> Go back</Link></p>
-                    <div align="center" id="profile-div">
+                    <div align="center">
                     <h1 id="profile-header">
                         Profile page
                     </h1>
+                    <div align="center" id="profile-div">
                     <p id="profile-name">
                         Name:
                     </p>
@@ -30,6 +31,7 @@ class ProfileContainer extends React.Component {
                     </p>
                     </div>
                     <div align="center">
+                    </div>
                     </div>
             </div>
             )
