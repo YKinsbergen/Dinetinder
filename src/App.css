@@ -172,6 +172,10 @@ body {
   text-decoration: none;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+.dinner-button:hover {
+  background-color: #F9A420;
 }
 #dinner-added {
   font-size: 20px;
