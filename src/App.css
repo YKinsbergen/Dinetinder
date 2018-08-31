@@ -298,20 +298,88 @@ body {
 #profile-name {
   color: lightgrey;
   font-size: 22px;
+  margin: 0 auto;
 }
 #profile-name-header {
-  font-size: 22px;
+  font-size: 30px;
+  margin: 3px auto;
 }
-
 
 #profile-address {
   color: lightgrey;
   font-size: 22px;
+  margin: 20px 0 auto;
 }
+
+#profile-address-header {
+  font-size: 30px;
+  margin: 3px auto;
+}
+
 #profile-photo {
   color: lightgrey;
   font-size: 22px;
+  margin: 20px 0 auto;
 }
+
+/* Signup page */
+#signup-welcome-header {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+#profile-form-div {
+  padding-top: 50px;
+  font-size: 20px;
+  line-height: 2.0;
+  background-color: darkslategray;
+  width: 40%;
+  max-width:900px;
+  border-radius: 10px;
+  height:50vh;
+  max-height:400px;
+}
+
+#profile-form-name {
+  font-size: 30px;
+}
+#profile-form-address {
+  font-size: 30px;
+}
+#profile-form-photo {
+  font-size: 30px;
+}
+
+#profile-submit-button {
+  margin-top: 15%;
+  padding: 6px 45px;
+  font-size: 35px;
+  height: auto;
+  border: none;
+  color: #FBF6F3;
+  background-color: #DC6210;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#profile-submit-button:hover {
+  padding: 7px 50px;
+  font-size: 40px;
+  height: auto;
+  border: none;
+  color: #FBF6F3;
+  background-color: #F9A420;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.your-photo {
+  border: 5px solid darkslategrey;
+  border-radius: 10px;
+}
+
 
 /* Swipe items in 'looking' */
 .swipe-container {
@@ -322,7 +390,7 @@ body {
   position: relative;
   color:#fff;
   border-radius: 25px !important;
-  border: solid 6px #34302D
+  border: solid 15px #34302D;
 }
 .swipe-wrap {
   overflow: hidden;
@@ -355,6 +423,11 @@ body {
   background:#DC6210;
   border-radius:5px;
   cursor: pointer;
+  transition: 0.3s
+}
+.swipe-button:hover {
+  background:#F9A420;
+  transition: 0.3s
 }
 
 /* MessagesContainer styling */
@@ -392,4 +465,3 @@ body {
   border-radius:5px;
   background:red;
 }
-
