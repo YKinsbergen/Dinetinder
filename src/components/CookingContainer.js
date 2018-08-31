@@ -24,10 +24,13 @@ class CookingContainer extends React.Component {
             event.target.time.value) {
         this.props.addUser({
             id: (this.props.users.length + 1),
+            name: this.props.profile[0].name,
+            address: this.props.profile[0].address,
             dish: this.state.dish,
             convoTopic: this.state.convoTopic,
             price: this.state.price,
             time: this.state.time,
+            photo: this.props.profile[0].photo
         })
         event.target.dish.value = ""
         event.target.convoTopic.value = ""

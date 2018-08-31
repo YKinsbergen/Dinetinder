@@ -77,8 +77,7 @@ class DineOutContainer extends React.Component {
                 <li><a onClick={this.closeModal}>Close</a></li>
               </ul>
             </div>
-          </div> 
-
+          </div>
       </div>
     );
   } else {
